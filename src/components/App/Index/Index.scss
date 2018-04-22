@@ -1,0 +1,42 @@
+@import '../../../globals/styles/variables';
+
+.indexpage {
+  display: flex;
+  background: linear-gradient(200deg, #9841c4, #416fc6, #59dee9);
+  background-size: 320% 320%;
+  -webkit-animation: indexBGMove 45s ease infinite;
+  -moz-animation: indexBGMove 45s ease infinite;
+  -o-animation: indexBGMove 45s ease infinite;
+  animation: indexBGMove 45s ease infinite;
+}
+
+.index-info {
+  background: #fff;
+  width: 800px;
+  padding: 30px;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 18px;
+  p {
+    padding: 0 25px;
+  }
+  a {
+    color: #0072ff;
+  }
+}
+
+.main-content {
+  &__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0 0 80px;
+  }
+}
+
+.page__inner {
+  background: #fff;
+  padding: 25px;
+  border: 1px solid #DFE1E6;
+  border-radius: 6px;
+}

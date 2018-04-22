@@ -1,0 +1,25 @@
+.preview__area {
+  border: 1px solid #eee;
+  min-height: 276px;
+  position: relative;
+  background-image: url("../../assets/images/transparent.png");
+  background-repeat: repeat;
+  &.sticky {
+    margin-top: 50px;
+  }
+}
+
+.preview__area-wrapper {
+  margin-left: 450px;
+}
+
+.preview__controls {
+  position: absolute;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0 15px;
+}

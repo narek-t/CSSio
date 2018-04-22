@@ -1,0 +1,28 @@
+.range__item-label {
+  margin-bottom: 15px;
+  span {
+    font-size: 13px;
+  }
+}
+
+.input.range__item-label-input {
+  width: 55px;
+  text-align: center;
+  font-size: 14px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.range__item-slider {
+  position: relative;
+  padding-right: 110px;
+}
+
+.range__item-input {
+  position: absolute;
+  right: 0;
+  top: -10px;
+  span {
+    margin-left: 8px;
+  }
+}

@@ -1,0 +1,60 @@
+.box-shadow__item {
+  margin-bottom: 20px;
+  padding: 40px 30px 20px;
+  border: 1px solid #eee;
+  position: relative; }
+
+.color-control .color-with-label__label {
+  font-size: 15px; }
+
+.color-control .color-with-label {
+  display: inline-block;
+  float: none;
+  margin-right: 0; }
+
+.box-checkbox {
+  display: inline-block;
+  margin-top: 3px;
+  margin-right: 52px; }
+  .box-checkbox label {
+    font-size: 15px;
+    cursor: pointer; }
+  .box-checkbox input {
+    margin-left: 6px; }
+
+.add-button {
+  margin: auto;
+  display: block;
+  transition: all .3s ease-in-out; }
+
+.popover {
+  position: absolute;
+  z-index: 2; }
+
+.cover {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px; }
+
+.delete-shadow {
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  color: rgba(255, 0, 0, 0.8);
+  border-radius: 50%;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 17px;
+  outline: 0; }
+  .delete-shadow span {
+    margin-top: -2px;
+    display: block; }
+  .delete-shadow:hover {
+    background: rgba(255, 0, 0, 0.2); }

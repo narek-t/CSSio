@@ -1,0 +1,26 @@
+.color-with-label {
+  margin-right: 40px;
+  float: left;
+  &__label {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  &__color {
+    width: 40px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    background: red;
+    cursor: pointer;
+    margin-top: -2px;
+    border: 1px solid #1F2667;
+    &:hover {
+      border-color: #139cda;
+    }
+  }
+}
+
+.box-shadow__aside {
+  width: 430px;
+  float: left;
+}

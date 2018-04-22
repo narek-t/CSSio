@@ -1,0 +1,56 @@
+.code__block {
+  background: whitesmoke;
+  position: relative;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  margin-top: 30px;
+  pre {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    padding: 1.25em 70px 1.25em 1.5em;
+    white-space: pre-line;
+    word-wrap: normal;
+    margin: 0;
+    font-family: monospace, monospace;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .copy__button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #ddd;
+    outline: 0;
+    font-size: 13px;
+    &:hover {
+      background: #ccc;
+    }
+  }
+}
+
+.copy__success {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background: rgba(19, 156, 218, 0.6);
+  color: #fff;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s ease-in-out;
+  span {
+    color: #fff;
+    font-size: 24px;
+  }
+  &.active {
+    top: 0;
+  }
+}

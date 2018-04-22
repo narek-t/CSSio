@@ -1,0 +1,97 @@
+@import '../../../globals/styles/variables';
+
+.sub-menu {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  top: 79px;
+  left: 0;
+  background: #fff;
+  width: 250px;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  &__link {
+    text-decoration: none;
+    color: $mainColor;
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    padding-left: 15px;
+    line-height: 40px;
+    transition: $transition;
+    border-top: 1px solid #DFE1E6;
+    position: relative;
+    overflow: hidden;
+    &::after {
+      content: '\2192';
+      position: absolute;
+      font-size: 15px;
+      top: 0;
+      right: -17px;
+      transition: $transition;
+    }
+    &:hover {
+      color: $hover;
+      &::after {
+        right: 10px;
+      }
+    }
+
+  }
+}
+
+.menu {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  &__item {
+    margin-left: 5px;
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &:last-of-type {
+      .menu__item__link {
+        padding-right: 0;
+      }
+    }
+    &:hover .sub-menu {
+      display: block;
+    }
+    &:hover .menu__item__link {
+      color: $hover;
+      &::after {
+        width: 50%;
+      }
+    }
+  }
+  &__item__link {
+    color: $mainColor;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    line-height: 78px;
+    transition: $transition;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-size: 14px;
+    position: relative;
+    padding: 0 15px;
+    height: 80px;
+    &::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 0px;
+      background: $mainColor;
+      bottom: 20px;
+      left: 15px;
+      transition: $transition;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.site-header {
+  background: #fff;
+  height: 80px;
+  border-bottom: 1px solid #DFE1E6; }
+
+.logo {
+  font-size: 24px;
+  text-decoration: none;
+  color: #1F2667;
+  line-height: 76px;
+  float: left;
+  letter-spacing: 0.1em;
+  font-weight: 700; }
+  .logo span {
+    transition: all 0.3s ease-in-out; }
+  .logo:hover {
+    color: #139cda; }
+    .logo:hover .bracket {
+      color: #89ddff; }
+    .logo:hover .css {
+      color: #80CBC4; }
+    .logo:hover .it {
+      color: #F78C6C; }
+    .logo:hover .io {
+      color: #F07178; }

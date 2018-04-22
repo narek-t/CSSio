@@ -1,0 +1,16 @@
+.box-shadow__controls .color-with-label {
+  margin-right: 25px;
+  padding-top: 21px; }
+  .box-shadow__controls .color-with-label__label {
+    font-size: 13px; }
+  .box-shadow__controls .color-with-label__color {
+    width: 30px;
+    height: 20px; }
+
+.box-shadow__controls .box-checkbox {
+  margin-top: 22px; }
+  .box-shadow__controls .box-checkbox label {
+    font-size: 13px; }
+
+.box-shadow__reset {
+  margin-top: 15px; }

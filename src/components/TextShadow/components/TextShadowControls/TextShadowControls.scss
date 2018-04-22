@@ -1,0 +1,16 @@
+.font-size-box {
+  position: relative;
+  padding-top: 15px !important;
+}
+
+.font-size-input {
+  display: inline-block;
+  vertical-align: middle;
+  .input.range__item-label-input {
+    margin-left: 0;
+  }
+  span {
+    font-size: 13px;
+    margin-left: 5px;
+  }
+}

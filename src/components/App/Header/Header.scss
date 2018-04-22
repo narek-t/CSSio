@@ -1,0 +1,35 @@
+@import '../../../globals/styles/variables';
+
+.site-header {
+  background: #fff;
+  height: 80px;
+  border-bottom: 1px solid #DFE1E6;
+}
+
+.logo {
+  font-size: 24px;
+  text-decoration: none;
+  color: $mainColor;
+  line-height: 76px;
+  float: left;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  span {
+    transition: $transition;
+  }
+  &:hover {
+    color: $hover;
+    .bracket {
+      color: #89ddff;
+    }
+    .css {
+      color: #80CBC4;
+    }
+    .it {
+      color: #F78C6C
+    }
+    .io {
+      color: #F07178;
+    }
+  }
+}
