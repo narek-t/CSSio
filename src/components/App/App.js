@@ -10,6 +10,7 @@ import Footer from './Footer/Footer'
 import IndexPage from './Index/Index'
 import BoxShadow from '../BoxShadow/index'
 import TextShadow from '../TextShadow/index'
+import Filters from '../Filters/index'
 
 class App extends Component {
     render() {
@@ -19,6 +20,7 @@ class App extends Component {
 				<Route path="/" exact component={IndexPage}/>
 				<Route path="/box-shadow" component={BoxShadow}/>
 				<Route path="/text-shadow" component={TextShadow}/>
+				<Route path="/filters" component={Filters}/>
 				<Footer/>
             </Aux>
         );

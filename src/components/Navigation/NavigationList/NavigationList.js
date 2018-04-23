@@ -36,6 +36,7 @@ const navigationList = (props) => {
 			<NavigationItem link="/" isClickable={true}>Animations</NavigationItem>
 			<NavigationItem link="/" isClickable={true}>Transforms</NavigationItem>
 			<NavigationItem link="/" isClickable={true}>Borders</NavigationItem>
+			<NavigationItem link="/filters" isClickable={true}>Filters</NavigationItem>
 
 		</ul>
 	)

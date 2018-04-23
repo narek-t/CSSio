@@ -65,7 +65,9 @@ const boxShadow = (props) => {
 							</div>
 						</StickyContainer>
 						<div className="box-shadow__code">
-							<Code code={Util.transformBoxShadowStyles(props.stylesArray, props.prefixes, 'forView')} codeForCopy={Util.transformBoxShadowStyles(props.stylesArray, props.prefixes, 'forCopy')}/>
+							<Code
+								code={Util.transformBoxShadowStyles(props.stylesArray, props.prefixes, 'forView')}
+								codeForCopy={Util.transformBoxShadowStyles(props.stylesArray, props.prefixes, 'forCopy')}/>
 						</div>
 					</div>
 				</div>

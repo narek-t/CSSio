@@ -1,0 +1,14 @@
+.filters__preview {
+  padding: 90px 30px 50px;
+  position: relative;
+  min-height: 500px;
+  background: #F5F6F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; }
+  .filters__preview img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto; }

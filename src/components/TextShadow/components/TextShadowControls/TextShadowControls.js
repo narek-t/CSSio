@@ -68,16 +68,11 @@ class TextShadowControls extends Component {
 							   type={'tel'}
 							   value={this.props.fontSize}
 							   onChange={(event) => {
-								   return this.props.onFontSizeChange(Util.checkNumberInput(event, 150, 1, this.props.fontSize))
+								   return this.props.onFontSizeChange(Util.checkNumberInput(event, 150, 0, this.props.fontSize))
 							   }}/>
 						<span>px</span>
 					</div>
-
-
 				</div>
-
-
-
 				<button className="reset-box box-shadow__reset"
 						onClick={this.props.resetTextShadowStateHandler}>Reset
 				</button>

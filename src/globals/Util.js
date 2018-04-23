@@ -27,12 +27,8 @@ export const changeShadowItem = (shadowItems, action) => {
 	if (action.payload.type === 'shadowColor') {
 		value = transformColorType(action.payload.value)
 	}
-	return shadowItems.map((shadowItem, index) => index === action.payload.index ?
-		{
-			...shadowItem,
-			[action.payload.type]: value
-		} : shadowItem
-	)
+
+	return updateObjectInArray(shadowItems, value, action.payload.index, action.payload.type)
 }
 
 export const deleteArrayItem = (array, index) => {
@@ -71,5 +67,40 @@ export const transformTextShadowStyles = (stylesArray, type) => {
 		code =  'text-shadow: ' + stylesArray.join('\r\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0') + ';'
 	}
 	return code
+
+}
+
+
+export const updateObjectInArray = (array, value, index, type) => {
+	return array.map((item, i) => i === index ?
+		{
+			...item,
+			[type]: value
+		} : item
+	)
+}
+
+export const makeFiltersStylesArray = (filters) => {
+	const changedStylesArray = filters.filter(filter => {
+		return filter.defaultValue !== filter.value
+	})
+	if (changedStylesArray.length < 1) return
+
+	return  changedStylesArray.map((item, index) => {
+		return item.name + `(${item.value}${item.units})`+ (changedStylesArray.length === index+1 ? '' : ' ')
+	})
+}
+
+export const transformFiltersStyles = (stylesArray, type) => {
+
+	if (Array.isArray(stylesArray) && stylesArray.length) {
+		let code =  'filter: ' + stylesArray.join('') + ';' + '\r\n' + '-webkit-filter: ' + stylesArray.join('') + ';'
+
+		if (type === 'forView') {
+			code =  'filter: ' + stylesArray.join('\r\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0') + ';' + '\r\n' + '-webkit-filter: ' + stylesArray.join('\r\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0') + ';'
+		}
+		return code
+	}
+
 
 }

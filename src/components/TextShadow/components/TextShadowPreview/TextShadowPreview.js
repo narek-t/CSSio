@@ -11,6 +11,7 @@ class TextShadowPreview extends Component {
 	shouldComponentUpdate(nextProps) {
 		return nextProps.style !== this.props.stylesArray ||
 			nextProps.bgColor !== this.props.bgColor ||
+			nextProps.fontSize !== this.props.fontSize ||
 			nextProps.textColor !== this.props.textColor
 	}
 

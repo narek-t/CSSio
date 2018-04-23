@@ -1,0 +1,8 @@
+.filter__item-input span {
+  font-size: 13px; }
+
+.filter__item-input.px {
+  right: -3px; }
+
+.filter__item-input.deg {
+  right: -11px; }

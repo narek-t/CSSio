@@ -10,12 +10,14 @@ import './globals/styles/index.css'
 
 import reducerBoxShadow from './components/BoxShadow/reducer/reducer'
 import reducerTextShadow from './components/TextShadow/reducer/reducer'
+import reducerFilter from './components/Filters/reducer/reducer'
 
 import registerServiceWorker from './registerServiceWorker';
 
 const rootReducer = combineReducers({
 	reducerBoxShadow,
-	reducerTextShadow
+	reducerTextShadow,
+	reducerFilter
 
 })
 

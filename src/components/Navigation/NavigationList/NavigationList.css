@@ -13,7 +13,7 @@
     text-decoration: none;
     color: #1F2667;
     display: block;
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.09em;
     padding-left: 15px;
@@ -63,7 +63,7 @@
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
     letter-spacing: 0.09em;
-    font-size: 14px;
+    font-size: 12px;
     position: relative;
     padding: 0 15px;
     height: 80px; }
