@@ -11,12 +11,29 @@ class FiltersPreview extends Component {
 	}
 
 	render() {
+		let imageUrl = this.props.imageUrl;
+		let imagePreview = null;
+		if (imageUrl) {
+			imagePreview = (<img src={imageUrl} alt="" style={{
+				filter: this.transformStyles(this.props.style),
+				WebkitFilter: this.transformStyles(this.props.style)
+			}} />);
+		} else {
+			imagePreview = (
+				<img src={image} alt="" style={{
+					filter: this.transformStyles(this.props.style),
+					WebkitFilter: this.transformStyles(this.props.style)
+				}}/>
+			);
+		}
+
 		return (
 
-			<div className='filters__preview'>
-				<img src={image} style={{
-					filter: this.transformStyles(this.props.style)
-				}}/>
+			<div className="filters__preview">
+					{imagePreview}
+				<span className="text-shadow-note">
+					<span>Your images will not be saved anywhere</span>
+				</span>
 			</div>
 		)
 	}
@@ -24,7 +41,7 @@ class FiltersPreview extends Component {
 
 const mapStateToProps = state => {
 	return {
-
+		imageUrl: state.reducerFilter.imageUrl
 	}
 }
 

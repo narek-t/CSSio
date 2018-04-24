@@ -1,0 +1,35 @@
+.image-converter__center {
+  text-align: center; }
+
+.image-converter__image-container {
+  padding: 30px;
+  position: relative; }
+  .image-converter__image-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto; }
+
+.image-converter__info {
+  margin-top: 30px; }
+
+.image-converter .sizes {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center; }
+  .image-converter .sizes li {
+    display: inline-block;
+    margin: 0 25px; }
+    .image-converter .sizes li span {
+      font-weight: 700; }
+
+.image-converter__code {
+  position: relative;
+  margin-top: 50px; }
+  .image-converter__code .code-variant {
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    left: 0;
+    font-size: 13px; }

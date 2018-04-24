@@ -17,6 +17,15 @@ const navigationList = (props) => {
 
 			<NavigationItem link="/"
 							subMenu={[
+								{link: '/filters', text: 'Filters'},
+								{link: '/image-to-base64', text: 'Image to Base64'},
+							]}
+							isClickable={false}>
+				Images
+			</NavigationItem>
+
+			<NavigationItem link="/"
+							subMenu={[
 									{link: '#', text: 'Box gradient'},
 									{link: '#', text: 'Text gradient'}
 								]}
@@ -36,7 +45,6 @@ const navigationList = (props) => {
 			<NavigationItem link="/" isClickable={true}>Animations</NavigationItem>
 			<NavigationItem link="/" isClickable={true}>Transforms</NavigationItem>
 			<NavigationItem link="/" isClickable={true}>Borders</NavigationItem>
-			<NavigationItem link="/filters" isClickable={true}>Filters</NavigationItem>
 
 		</ul>
 	)

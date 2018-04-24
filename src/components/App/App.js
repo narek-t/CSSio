@@ -11,6 +11,7 @@ import IndexPage from './Index/Index'
 import BoxShadow from '../BoxShadow/index'
 import TextShadow from '../TextShadow/index'
 import Filters from '../Filters/index'
+import ImageConverter from '../ImageConverter/index'
 
 class App extends Component {
     render() {
@@ -21,6 +22,7 @@ class App extends Component {
 				<Route path="/box-shadow" component={BoxShadow}/>
 				<Route path="/text-shadow" component={TextShadow}/>
 				<Route path="/filters" component={Filters}/>
+				<Route path="/image-to-base64" component={ImageConverter}/>
 				<Footer/>
             </Aux>
         );

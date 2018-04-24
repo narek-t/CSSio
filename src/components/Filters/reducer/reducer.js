@@ -14,6 +14,12 @@ const reducerFilter = (state = defaultValues, action) => {
 				stylesArray: Util.makeFiltersStylesArray(newFiltersArray)
 			}
 
+		case actionsFilters.CHANGE_IMAGE :
+			return {
+				...state,
+				imageUrl: action.payload.url
+			}
+
 		case actionsFilters.RESET_FILTERS :
 			return {
 				...defaultValues

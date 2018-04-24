@@ -83,6 +83,7 @@ const defaultValues = {
 		},
 	],
 	stylesArray: [],
+	imageUrl: '',
 }
 
 export default defaultValues

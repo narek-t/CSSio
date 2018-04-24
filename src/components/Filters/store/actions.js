@@ -9,3 +9,9 @@ export const resetFilters = () => ({
 	type: RESET_FILTERS,
 	payload: {},
 })
+
+export const CHANGE_IMAGE = 'FILTERS_CONTAINER_CHANGE_IMAGE'
+export const changeImage = (url) => ({
+	type: CHANGE_IMAGE,
+	payload: {url},
+})

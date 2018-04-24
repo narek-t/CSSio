@@ -94,13 +94,22 @@ export const makeFiltersStylesArray = (filters) => {
 export const transformFiltersStyles = (stylesArray, type) => {
 
 	if (Array.isArray(stylesArray) && stylesArray.length) {
-		let code =  'filter: ' + stylesArray.join('') + ';' + '\r\n' + '-webkit-filter: ' + stylesArray.join('') + ';'
+		let code =  'filter: ' + stylesArray.join('') + ';\r\n-webkit-filter: ' + stylesArray.join('') + ';'
 
 		if (type === 'forView') {
-			code =  'filter: ' + stylesArray.join('\r\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0') + ';' + '\r\n' + '-webkit-filter: ' + stylesArray.join('\r\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0') + ';'
+			code =  'filter: ' + stylesArray.join('\r\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0') + ';\r\n-webkit-filter: ' + stylesArray.join('\r\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0') + ';'
 		}
 		return code
 	}
 
+}
 
+
+export const fileSizes = (bytes,decimals) => {
+	if(bytes === 0) return '0 Bytes';
+	const k = 1024,
+		dm = decimals || 2,
+		sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'],
+		i = Math.floor(Math.log(bytes) / Math.log(k));
+	return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
 }

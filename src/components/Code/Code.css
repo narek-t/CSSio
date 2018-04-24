@@ -4,10 +4,14 @@
   border: 1px solid #ddd;
   overflow: hidden;
   margin-top: 30px; }
+  .code__block .pre-wrapper {
+    padding: 0 70px 0 1.5em; }
+    .code__block .pre-wrapper.nowrap pre {
+      white-space: nowrap; }
   .code__block pre {
     -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
-    padding: 1.25em 70px 1.25em 1.5em;
+    overflow-x: scroll;
+    padding: 1.25em 0;
     white-space: pre-line;
     word-wrap: normal;
     margin: 0;
@@ -25,7 +29,8 @@
     padding-right: 10px;
     background: #ddd;
     outline: 0;
-    font-size: 13px; }
+    font-size: 13px;
+    -webkit-backface-visibility: hidden; }
     .code__block .copy__button:hover {
       background: #ccc; }
 

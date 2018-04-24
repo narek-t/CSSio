@@ -19,8 +19,10 @@ class Code extends Component  {
 				<div className={"copy__success " + (this.state.copied ? 'active' : '')}>
 					<span>Code Copied!</span>
 				</div>
-				<pre>{this.props.code}</pre>
-				<CopyToClipboard text={this.props.codeForCopy} onCopy={this.toggleCopiedState}>
+				<div className={'pre-wrapper ' + (this.props.nowrap ? 'nowrap' : '')}>
+					<pre>{this.props.code}</pre>
+				</div>
+				<CopyToClipboard text={this.props.codeForCopy ? this.props.codeForCopy : this.props.code} onCopy={this.toggleCopiedState}>
 					<button type="button" className="copy__button is-dark">Copy!</button>
 				</CopyToClipboard>
 			</div>

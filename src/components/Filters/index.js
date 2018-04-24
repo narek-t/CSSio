@@ -27,20 +27,18 @@ const Filters = (props) => {
 										filters={props.filters}
 										onRangeChange={(value, index) => props.onRangeChangeHandler(value, index)}/>
 								</div>
-
 								<div className="preview__area-wrapper">
-
-									<Preview controls={
+									<Preview
+										controls={
 										<FiltersControls
+											onImageChange={(e) => props.handleImageChange(e)}
 											resetFiltersStateHandler={props.resetFiltersHandler}/>
 									}>
 										<FiltersPreview style={props.stylesArray}/>
 									</Preview>
-
 								</div>
 							</div>
 						</div>
-
 						<div className="box-shadow__code">
 							<Code
 								code={Util.transformFiltersStyles(props.stylesArray, 'forView')}
@@ -67,6 +65,9 @@ const mapDispatchToProps = dispatch => {
 		},
 		resetFiltersHandler: () => {
 			dispatch(thunkFilters.resetFilters())
+		},
+		handleImageChange: (e) => {
+			dispatch(thunkFilters.imageChange(e))
 		}
 	}
 }
