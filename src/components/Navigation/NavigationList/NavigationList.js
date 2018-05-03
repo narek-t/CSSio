@@ -26,7 +26,7 @@ const navigationList = (props) => {
 
 			<NavigationItem link="/"
 							subMenu={[
-									{link: '#', text: 'Box gradient'},
+									{link: '/gradient', text: 'Box gradient'},
 									{link: '#', text: 'Text gradient'}
 								]}
 							isClickable={false}>

@@ -5,14 +5,21 @@
     font-size: 18px;
     margin-right: 10px; }
   .color-with-label__color {
+    position: absolute;
     width: 40px;
     height: 30px;
-    display: inline-block;
-    vertical-align: middle;
-    background: red;
+    top: 0;
+    left: 0;
     cursor: pointer;
-    margin-top: -2px;
     border: 1px solid #1F2667; }
+    .color-with-label__color--wrapper {
+      background-image: url("../../assets/images/transparent.png");
+      width: 40px;
+      height: 30px;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      margin-top: -2px; }
     .color-with-label__color:hover {
       border-color: #139cda; }
 

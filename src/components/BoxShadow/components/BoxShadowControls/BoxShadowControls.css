@@ -6,6 +6,9 @@
   .box-shadow__controls .color-with-label__color {
     width: 30px;
     height: 20px; }
+    .box-shadow__controls .color-with-label__color--wrapper {
+      width: 30px;
+      height: 20px; }
 
 .box-shadow__controls .box-checkbox {
   margin-top: 22px; }

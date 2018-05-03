@@ -1,0 +1,53 @@
+
+
+.delete-shadow.delete-gradient {
+  left: -12px;
+  top: -13px;
+}
+
+.step-wrapper {
+  float: right;
+}
+
+.input.range__item-label-input.gradient-input {
+  margin-left: 0;
+  display: inline-block;
+  margin-right: 6px;
+  margin-top: 0;
+  height: 30px;
+}
+
+.step-wrapper .range__item-input {
+  position: static;
+}
+
+.step-wrapper .range__item-input span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0;
+}
+
+.color-with-label.gradient-color-with-label {
+  margin-right: 0;
+  .color-with-label__color--wrapper {
+    margin-top: 0;
+  }
+  .color-with-label__label {
+    position: relative;
+    top: 2px;
+  }
+}
+
+.box-shadow__item {
+  padding-top: 20px;
+}
+
+.gradient-single-index {
+  position: absolute;
+  left: 7px;
+  top: 28px;
+  color: #1F2667;
+  font-weight: 700;
+  font-size: 13px;
+}
+

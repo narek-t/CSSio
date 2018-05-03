@@ -32,13 +32,13 @@ class TextShadowControls extends Component {
 		return (
 			<div className='box-shadow__controls'>
 				<div className="color-with-label"><span className="color-with-label__label">Background color:</span>
-					<div className="color-with-label__color"
+					<div className="color-with-label__color--wrapper"><div className="color-with-label__color"
 						 onClick={() => this.handleClick('displayBackgroundColorPicker') }
 						 style={{
 							 backgroundColor: this.props.backgroundColor
 						 }}
 					>
-					</div>
+					</div></div>
 					{ this.state.displayBackgroundColorPicker ? <div className="popover">
 						<div className="cover" onClick={ () => this.handleClose('displayBackgroundColorPicker') }/>
 						<ChromePicker color={ this.props.backgroundColor }
@@ -46,12 +46,13 @@ class TextShadowControls extends Component {
 					</div> : null }
 				</div>
 				<div className="color-with-label"><span className="color-with-label__label">Text  color:</span>
-					<div className="color-with-label__color"
+					<div className="color-with-label__color--wrapper">
+						<div className="color-with-label__color"
 						 onClick={() => this.handleClick('displayTextColorPicker') }
 						 style={{
 							 backgroundColor: this.props.textColor
-						 }}
-					>
+						 }}>
+						</div>
 					</div>
 					{ this.state.displayTextColorPicker ? <div className="popover">
 						<div className="cover" onClick={ () => this.handleClose('displayTextColorPicker') }/>

@@ -22,7 +22,4 @@ export const imageChange = (e) => (dispatch) => {
 	reader.onloadend = () => {
 		dispatch(actionsFilters.changeImage(reader.result))
 	}
-
-
-	console.warn(file)
 }

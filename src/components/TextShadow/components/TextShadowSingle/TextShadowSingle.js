@@ -90,13 +90,13 @@ class TextShadowSingle extends Component {
 				</div>
 				<div className="color-control cf">
 					<div className="color-with-label"><span className="color-with-label__label">Shadow color:</span>
-						<div className="color-with-label__color"
+						<div className="color-with-label__color--wrapper"><div className="color-with-label__color"
 							 onClick={ this.handleClick }
 							 style={{
 								 backgroundColor: this.props.currentColor
 							 }}
 						>
-						</div>
+						</div></div>
 
 						{ this.state.displayColorPicker ? <div className="popover">
 							<div className="cover" onClick={ this.handleClose }/>

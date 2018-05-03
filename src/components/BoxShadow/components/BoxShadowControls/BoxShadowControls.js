@@ -32,12 +32,13 @@ class BoxShadowControls extends Component {
 		return (
 			<div className='box-shadow__controls'>
 				<div className="color-with-label"><span className="color-with-label__label">Background color:</span>
-					<div className="color-with-label__color"
+					<div className="color-with-label__color--wrapper">
+						<div className="color-with-label__color"
 						 onClick={() => this.handleClick('displayBackgroundColorPicker') }
 						 style={{
 							 backgroundColor: this.props.backgroundColor
-						 }}
-					>
+						 }}>
+						</div>
 					</div>
 					{ this.state.displayBackgroundColorPicker ? <div className="popover">
 						<div className="cover" onClick={ () => this.handleClose('displayBackgroundColorPicker') }/>
@@ -46,13 +47,13 @@ class BoxShadowControls extends Component {
 					</div> : null }
 				</div>
 				<div className="color-with-label"><span className="color-with-label__label">Box color:</span>
-					<div className="color-with-label__color"
+					<div className="color-with-label__color--wrapper"><div className="color-with-label__color"
 						 onClick={() => this.handleClick('displayBoxColorPicker') }
 						 style={{
 							 backgroundColor: this.props.boxColor
 						 }}
 					>
-					</div>
+					</div></div>
 					{ this.state.displayBoxColorPicker ? <div className="popover">
 						<div className="cover" onClick={ () => this.handleClose('displayBoxColorPicker') }/>
 						<ChromePicker color={ this.props.boxColor }

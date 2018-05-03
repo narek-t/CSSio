@@ -1,3 +1,11 @@
+export const uniqID = () => {
+	return '_' + Math.random().toString(36).substr(2, 9);
+}
+
+export const rgbToHex = (r, g, b) => {
+	return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+}
+
 export const checkNumberInput = (event, maxValue, minValue, oldValue) => {
 	let value = +event.target.value
 
@@ -31,7 +39,10 @@ export const changeShadowItem = (shadowItems, action) => {
 	return updateObjectInArray(shadowItems, value, action.payload.index, action.payload.type)
 }
 
-export const deleteArrayItem = (array, index) => {
+export const deleteArrayItem = (array, index, type) => {
+	if (type === 'deleteByID') {
+		return array.filter( (item) => item.id !== index);
+	}
 	return array.filter( (item, i) => i !== index);
 }
 
@@ -71,13 +82,30 @@ export const transformTextShadowStyles = (stylesArray, type) => {
 }
 
 
-export const updateObjectInArray = (array, value, index, type) => {
-	return array.map((item, i) => i === index ?
-		{
-			...item,
-			[type]: value
-		} : item
-	)
+export const updateObjectInArray = (array, value, index, type, id) => {
+	return array.map((item, i) => {
+		let changeBy = i;
+		let changeFor = index;
+		if (id) {
+			changeBy = id;
+			changeFor = item.id
+		}
+		return changeBy === changeFor ?
+			{
+				...item,
+				[type]: value
+			} : item
+	})
+}
+
+export const updateObjectsInArray = (array, id, values) => {
+	return array.map(item => {
+		return id === item.id ?
+			{
+				...item,
+				...values,
+			} : item
+	})
 }
 
 export const makeFiltersStylesArray = (filters) => {
@@ -112,4 +140,35 @@ export const fileSizes = (bytes,decimals) => {
 		sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'],
 		i = Math.floor(Math.log(bytes) / Math.log(k));
 	return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
+}
+
+export const transformGradientStyles = (gradients, angle, type, predestination) => {
+	const sortedGradients = sortArray(gradients, 'positionPercentage')
+	const mappedGradients = sortedGradients.map(gradient => {
+		return (
+			gradient.color + ' ' + gradient.positionPercentage + '%'
+		)
+	})
+	let gradientCss = `linear-gradient(${angle ? angle+'deg, ' : ''} ${mappedGradients.join(', ')})`
+
+	if (type === 'radial') {
+		gradientCss =  `radial-gradient(circle, ${mappedGradients.join(', ')})`
+	}
+
+	if (predestination === 'forCode') {
+		gradientCss = 'background: ' + mappedGradients[0].split(' ')[0] + ';\r\nbackground: ' + gradientCss + ';'
+	}
+
+	return gradientCss
+
+}
+
+
+
+
+export const sortArray = (array, key) => {
+	return array.concat().sort((a, b) => {
+		let keyA = a[key], keyB = b[key];
+		return keyA-keyB
+	});
 }

@@ -11,14 +11,15 @@ import './globals/styles/index.css'
 import reducerBoxShadow from './components/BoxShadow/reducer/reducer'
 import reducerTextShadow from './components/TextShadow/reducer/reducer'
 import reducerFilter from './components/Filters/reducer/reducer'
+import reducerGradient from './components/Gradient/reducer/reducer'
 
 import registerServiceWorker from './registerServiceWorker';
 
 const rootReducer = combineReducers({
 	reducerBoxShadow,
 	reducerTextShadow,
-	reducerFilter
-
+	reducerFilter,
+	reducerGradient
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
