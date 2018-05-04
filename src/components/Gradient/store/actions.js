@@ -1,19 +1,19 @@
 export const HANDLE_CHANGE = 'GRADIENT_CONTAINER_HANDLE_CHANGE'
-export const handleChange = (value,id, from) => ({
+export const handleChange = (newGradients) => ({
 	type: HANDLE_CHANGE,
-	payload: {value,id, from}
+	payload: {newGradients}
 })
 
 export const SET_NEW_STOP_ITEM = 'GRADIENT_CONTAINER_SET_NEW_STOP_ITEM'
-export const setNewStopItem = (color, percentage, clickedPosition, id) => ({
+export const setNewStopItem = (gradientWithNewStopItem) => ({
 	type: SET_NEW_STOP_ITEM,
-	payload: {color, percentage, clickedPosition, id}
+	payload: {gradientWithNewStopItem}
 })
 
 export const HANDLE_DELETE = 'GRADIENT_CONTAINER_HANDLE_DELETE'
-export const handleDelete = (id) => ({
+export const handleDelete = (gradientsWithDeletedItem) => ({
 	type: HANDLE_DELETE,
-	payload: {id}
+	payload: {gradientsWithDeletedItem}
 })
 
 export const RESET_STATE = 'GRADIENT_CONTAINER_RESET_STATE'
