@@ -1,0 +1,139 @@
+import React from 'react'
+import {connect} from 'react-redux'
+import {StickyContainer, Sticky} from 'react-sticky';
+
+import './index.css'
+import * as thunkTextGradient from '../TextGradient/thunk/thunkTextGradient'
+import Preview from '../Preview/Preview'
+import * as Util from '../../globals/Util'
+import Code from '../Code/Code'
+
+
+
+import GradientSingle from '../Gradient/components/GradientSingle/GradientSingle'
+import TextGradientPreview from './components/TextGradientPreview/TextGradientPreview'
+import TextGradientControls from './components/TextGradientControls/TextGradientControls'
+import GradientLine from '../Gradient/components/GradientLine/GradientLine'
+
+
+const textGradient = (props) => {
+	return (
+		<main className="main-content one-page">
+			<div className="container">
+				<h1 className="main-content__title" >
+					<span style={
+						{
+							backgroundImage: Util.transformGradientStyles(props.gradients, props.angle, props.type),
+							WebkitBackgroundClip: 'text',
+							WebkitTextFillColor: 'transparent'
+						}
+					}>Text gradient generator</span>
+				</h1>
+				<div className="box-shadow page-wrapper">
+					<div className="page__inner">
+						<StickyContainer>
+							<div className="page__content">
+								<GradientLine
+									gradients={props.sortedGradients}
+									angle={props.angle}
+									handleChange={
+										(value, id, from) => props.handleChange(value, id, from)
+									}
+									setNewStopItemHandler={(event) => props.setNewStopItemHandler(event, props.gradients, Util.uniqID())}
+								/>
+								<div className="box-shadow__wrapper cf">
+									<div className="box-shadow__aside gradient__aside">
+										{
+											props.sortedGradients.map((gradient, i) => {
+												return <GradientSingle
+													gradients={props.gradients}
+													color={gradient.color}
+													key={gradient.id}
+													index={i}
+													handleChange={(value, from) => props.handleChange(value, gradient.id, from)}
+													handleDelete={() => props.deleteGradientHandler(gradient.id)}
+													step={gradient.positionPercentage}/>
+											})
+										}
+									</div>
+									<div className="preview__area-wrapper gradient__area-wrapper">
+										<Sticky topOffset={50}
+												disableHardwareAcceleration={true}
+												bottomOffset={50}>
+											{
+												({style, isSticky}) =>
+													<Preview
+														style={style}
+														isSticky={isSticky}
+														controls={
+															<TextGradientControls
+																fontSize={props.fontSize}
+																resetGradientState={props.resetGradientState}
+																type={props.type}
+																angle={props.angle}
+																onFontSizeChange={(value) => props.fontSizeChangeHandler(value)}
+																angleChangeHandler={(value) => props.angleChangeHandler(value)}
+																changeTypeHandler={(value) => props.handleTypeChange(value)}/>
+														}>
+														<TextGradientPreview
+															gradients={props.gradients}
+															fontSize={props.fontSize}
+															angle={props.angle}
+															type={props.type}/>
+													</Preview>
+											}
+										</Sticky>
+									</div>
+								</div>
+							</div>
+						</StickyContainer>
+						<div className="box-shadow__code">
+							<Code
+								code={Util.transformGradientStyles(props.gradients, props.angle, props.type, 'forTextGradientCode')}
+							/>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	)
+}
+
+const mapStateToProps = state => {
+	return {
+		gradients: state.reducerTextGradient.gradients,
+		sortedGradients: Util.sortArray(state.reducerTextGradient.gradients, 'positionPercentage'),
+		angle: state.reducerTextGradient.angle,
+		type: state.reducerTextGradient.type,
+		fontSize: state.reducerTextGradient.fontSize,
+	}
+}
+
+const mapDispatchToProps = dispatch => {
+	return {
+		handleChange: (value,id, from) => {
+			dispatch(thunkTextGradient.handleChange(value,id, from))
+		},
+		deleteGradientHandler: (id) => {
+			dispatch(thunkTextGradient.handleDelete(id))
+		},
+		resetGradientState: () => {
+			dispatch(thunkTextGradient.resetGradientState())
+		},
+		setNewStopItemHandler: (event, gradients, id) => {
+			dispatch(thunkTextGradient.setNewStopItem(event, gradients, id))
+		},
+		handleTypeChange: (value) => {
+			dispatch(thunkTextGradient.changeType(value))
+		},
+		angleChangeHandler: (value) => {
+			dispatch(thunkTextGradient.changeAngle(value))
+		},
+		fontSizeChangeHandler: (value) => {
+			dispatch(thunkTextGradient.fontSizeChange(value))
+		}
+	}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(textGradient)

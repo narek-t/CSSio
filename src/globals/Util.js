@@ -159,6 +159,10 @@ export const transformGradientStyles = (gradients, angle, type, predestination) 
 		gradientCss = 'background: ' + mappedGradients[0].split(' ')[0] + ';\r\nbackground: ' + gradientCss + ';'
 	}
 
+	if (predestination === 'forTextGradientCode') {
+		gradientCss = 'background: ' + mappedGradients[0].split(' ')[0] + ';\r\nbackground: ' + gradientCss + ';\r\n-webkit-background-clip: text;\r\n-webkit-text-fill-color: transparent;'
+	}
+
 	return gradientCss
 
 }

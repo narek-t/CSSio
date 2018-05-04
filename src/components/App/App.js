@@ -13,6 +13,7 @@ import TextShadow from '../TextShadow/index'
 import Filters from '../Filters/index'
 import ImageConverter from '../ImageConverter/index'
 import Gradient from '../Gradient/index'
+import TextGradient from '../TextGradient/index'
 
 class App extends Component {
     render() {
@@ -25,6 +26,7 @@ class App extends Component {
 				<Route path="/filters" component={Filters}/>
 				<Route path="/image-to-base64" component={ImageConverter}/>
 				<Route path="/gradient" component={Gradient}/>
+				<Route path="/text-gradient" component={TextGradient}/>
 				<Footer/>
             </Aux>
         );
