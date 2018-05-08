@@ -13,6 +13,7 @@ import reducerTextShadow from './components/TextShadow/reducer/reducer'
 import reducerFilter from './components/Filters/reducer/reducer'
 import reducerGradient from './components/Gradient/reducer/reducer'
 import reducerTextGradient from './components/TextGradient/reducer/reducer'
+import reducerFlexbox from './components/Flexbox/reducer/reducer'
 
 import registerServiceWorker from './registerServiceWorker';
 
@@ -21,7 +22,8 @@ const rootReducer = combineReducers({
 	reducerTextShadow,
 	reducerFilter,
 	reducerGradient,
-	reducerTextGradient
+	reducerTextGradient,
+	reducerFlexbox
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose

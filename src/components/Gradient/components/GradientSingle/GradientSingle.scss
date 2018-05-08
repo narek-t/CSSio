@@ -38,10 +38,6 @@
   }
 }
 
-.box-shadow__item {
-  padding-top: 20px;
-}
-
 .gradient-single-index {
   position: absolute;
   left: 7px;
@@ -51,3 +47,6 @@
   font-size: 13px;
 }
 
+.gradient-item.box-shadow__item {
+  padding-top: 20px;
+}

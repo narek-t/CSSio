@@ -14,6 +14,7 @@ import Filters from '../Filters/index'
 import ImageConverter from '../ImageConverter/index'
 import Gradient from '../Gradient/index'
 import TextGradient from '../TextGradient/index'
+import Flexbox from '../Flexbox/index'
 
 class App extends Component {
     render() {
@@ -27,6 +28,7 @@ class App extends Component {
 				<Route path="/image-to-base64" component={ImageConverter}/>
 				<Route path="/gradient" component={Gradient}/>
 				<Route path="/text-gradient" component={TextGradient}/>
+				<Route path="/flexbox" component={Flexbox}/>
 				<Footer/>
             </Aux>
         );

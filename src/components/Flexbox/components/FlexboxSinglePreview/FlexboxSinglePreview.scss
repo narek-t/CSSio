@@ -1,0 +1,27 @@
+.flex-single {
+  padding: 40px 20px 20px;
+  position: relative;
+  min-width: 100px;
+  min-height: 120px;
+  border: 1px solid #ccc;
+  flex: 1 auto;
+  .flex-item-number {
+    top: 3px;
+  }
+  .flex-index {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.flex-item__text {
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #139cda;
+  padding: 5px;
+  background: #fff;
+}
+

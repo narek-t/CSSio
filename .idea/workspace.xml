@@ -4,8 +4,11 @@
     <list default="true" id="4fb31569-d912-4005-899f-519167f4f65c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Code/Code.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Code/Code.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Code/Code.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Code/Code.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Gradient/components/GradientSingle/GradientSingle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gradient/components/GradientSingle/GradientSingle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Gradient/components/GradientSingle/GradientSingle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gradient/components/GradientSingle/GradientSingle.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationList/NavigationList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationList/NavigationList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/globals/Util.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/globals/Util.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,10 +24,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/TextGradient/index.js">
+        <entry file="file://$PROJECT_DIR$/src/components/Flexbox/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="91" column="129" selection-start-line="91" selection-start-column="110" selection-end-line="91" selection-end-column="129" />
+            <state relative-caret-position="639">
+              <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -32,11 +35,74 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Util.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/globals/Util.js">
+      <file leaf-file-name="FlexboxPreview.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Flexbox/components/FlexboxPreview/FlexboxPreview.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
+            <state relative-caret-position="704">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlexboxSingle.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Flexbox/components/FlexboxSingle/FlexboxSingle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="19" column="53" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlexboxSingle.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Flexbox/components/FlexboxSingle/FlexboxSingle.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1242">
+              <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlexboxSinglePreview.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Flexbox/components/FlexboxSinglePreview/FlexboxSinglePreview.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Code.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Code/Code.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Code.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Code/Code.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="defaultValues.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Flexbox/store/defaultValues.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -45,19 +111,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>FiltersPreview</find>
-      <find>BoxShadowSingle</find>
-      <find>step</find>
-      <find>console.wa</find>
-      <find>slice</find>
-      <find>.color-with-label</find>
-      <find>red</find>
-      <find>color-with-label</find>
-      <find>color-with-label__color</find>
-      <find>gradientLine</find>
-      <find>props</find>
-      <find>stopprop</find>
-      <find>console.w</find>
       <find>changeColorHandler</find>
       <find>SET_NEW_STOP_ITEM</find>
       <find>shouldComponentUpdate</find>
@@ -75,6 +128,19 @@
       <find>actionsGradient</find>
       <find>thunkGradient</find>
       <find>reducerGradient</find>
+      <find>padding-top: 20px;</find>
+      <find>step-wrapper</find>
+      <find>contented</find>
+      <find>add-button</find>
+      <find>.flex-item</find>
+      <find>flex-item-label</find>
+      <find>array.</find>
+      <find>mapstate</find>
+      <find>handleSelectChange(event)</find>
+      <find>flex-single</find>
+      <find>.flex-wrapper</find>
+      <find>-number</find>
+      <find>pre-wrapper</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -101,6 +167,7 @@
       <replace>actionsTextGradient</replace>
       <replace>thunkTextGradient</replace>
       <replace>reducerTextGradient</replace>
+      <replace>handleSelectChange(event.target.value)</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/components/Gradient</dir>
@@ -112,26 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Filters/components/FiltersGenerator/FiltersGenerator.scss" />
-        <option value="$PROJECT_DIR$/src/components/Filters/components/FiltersGenerator/FiltersGenerator.js" />
-        <option value="$PROJECT_DIR$/src/components/Filters/components/FiltersPreview/FiltersPreview.scss" />
-        <option value="$PROJECT_DIR$/src/components/Filters/store/actions.js" />
-        <option value="$PROJECT_DIR$/src/components/Filters/store/defaultValues.js" />
-        <option value="$PROJECT_DIR$/src/components/Filters/reducer/reducer.js" />
-        <option value="$PROJECT_DIR$/src/components/Filters/components/FiltersControls/FiltersControls.js" />
-        <option value="$PROJECT_DIR$/src/components/Filters/components/FiltersControls/FiltersControls.scss" />
-        <option value="$PROJECT_DIR$/src/components/Filters/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Filters/components/FiltersPreview/FiltersPreview.js" />
-        <option value="$PROJECT_DIR$/src/components/Filters/index.scss" />
-        <option value="$PROJECT_DIR$/src/components/Code/Code.js" />
-        <option value="$PROJECT_DIR$/src/components/Code/Code.scss" />
-        <option value="$PROJECT_DIR$/src/components/Preview/Preview.scss" />
-        <option value="$PROJECT_DIR$/src/components/BoxShadow/components/BoxShadowPreview/BoxShadowPreview.scss" />
-        <option value="$PROJECT_DIR$/src/components/ImageConverter/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Filters/thunk/thunkFilters.js" />
-        <option value="$PROJECT_DIR$/src/components/BoxShadow/index.scss" />
-        <option value="$PROJECT_DIR$/src/components/BoxShadow/components/BoxShadowControls/BoxShadowControls.js" />
-        <option value="$PROJECT_DIR$/src/components/BoxShadow/components/BoxShadowControls/BoxShadowControls.scss" />
         <option value="$PROJECT_DIR$/src/components/TextShadow/components/TextShadowControls/TextShadowControls.js" />
         <option value="$PROJECT_DIR$/src/components/TextShadow/components/TextShadowSingle/TextShadowSingle.js" />
         <option value="$PROJECT_DIR$/src/components/BoxShadow/components/BoxShadowSingle/BoxShadowSingle.js" />
@@ -143,15 +190,11 @@
         <option value="$PROJECT_DIR$/src/components/Gradient/components/GradientPreview/GradientPreview.js" />
         <option value="$PROJECT_DIR$/src/components/Gradient/index.js" />
         <option value="$PROJECT_DIR$/src/components/Gradient/components/GradientLine/GradientLine.scss" />
-        <option value="$PROJECT_DIR$/src/components/Gradient/components/GradientSingle/GradientSingle.scss" />
         <option value="$PROJECT_DIR$/src/components/Gradient/components/GradientLine/GradientLine.js" />
         <option value="$PROJECT_DIR$/src/components/Gradient/components/GradientSingle/GradientSingle.js" />
         <option value="$PROJECT_DIR$/src/components/Gradient/store/actions.js" />
         <option value="$PROJECT_DIR$/src/components/Gradient/reducer/reducer.js" />
         <option value="$PROJECT_DIR$/src/components/Gradient/thunk/thunkGradient.js" />
-        <option value="$PROJECT_DIR$/src/components/App/App.js" />
-        <option value="$PROJECT_DIR$/src/components/Navigation/NavigationList/NavigationList.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/TextGradient/components/TextGradientPreview/TextGradientPreview.scss" />
         <option value="$PROJECT_DIR$/src/components/TextGradient/components/TextGradientPreview/TextGradientPreview.js" />
         <option value="$PROJECT_DIR$/src/components/TextGradient/store/defaultValues.js" />
@@ -163,6 +206,30 @@
         <option value="$PROJECT_DIR$/src/components/TextGradient/reducer/reducer.js" />
         <option value="$PROJECT_DIR$/src/components/TextGradient/index.js" />
         <option value="$PROJECT_DIR$/src/globals/Util.js" />
+        <option value="$PROJECT_DIR$/src/components/App/App.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Navigation/NavigationList/NavigationList.js" />
+        <option value="$PROJECT_DIR$/src/components/SelectBox/SelectBox.js" />
+        <option value="$PROJECT_DIR$/src/components/Flexbox/components/FlexboxMainControls/FlexboxMainControls.scss" />
+        <option value="$PROJECT_DIR$/src/components/Gradient/components/GradientSingle/GradientSingle.scss" />
+        <option value="$PROJECT_DIR$/src/components/SelectBox/SelectBox.scss" />
+        <option value="$PROJECT_DIR$/src/components/Flexbox/components/FlexboxControls/FlexboxControls.scss" />
+        <option value="$PROJECT_DIR$/src/components/Flexbox/components/FlexboxControls/FlexboxControls.js" />
+        <option value="$PROJECT_DIR$/src/components/Flexbox/components/FlexboxMainControls/FlexboxMainControls.js" />
+        <option value="$PROJECT_DIR$/src/components/Flexbox/thunk/thunkFlexbox.js" />
+        <option value="$PROJECT_DIR$/src/components/Flexbox/store/actions.js" />
+        <option value="$PROJECT_DIR$/src/components/Flexbox/reducer/reducer.js" />
+        <option value="$PROJECT_DIR$/src/components/Flexbox/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Flexbox/index.scss" />
+        <option value="$PROJECT_DIR$/src/components/Flexbox/components/FlexboxPreview/FlexboxPreview.js" />
+        <option value="$PROJECT_DIR$/src/components/Flexbox/components/FlexboxPreview/FlexboxPreview.scss" />
+        <option value="$PROJECT_DIR$/src/components/Flexbox/components/FlexboxSingle/FlexboxSingle.js" />
+        <option value="$PROJECT_DIR$/src/components/Flexbox/components/FlexboxSingle/FlexboxSingle.scss" />
+        <option value="$PROJECT_DIR$/src/components/Flexbox/store/defaultValues.js" />
+        <option value="$PROJECT_DIR$/src/components/Flexbox/components/FlexboxSinglePreview/FlexboxSinglePreview.js" />
+        <option value="$PROJECT_DIR$/src/components/Flexbox/components/FlexboxSinglePreview/FlexboxSinglePreview.scss" />
+        <option value="$PROJECT_DIR$/src/components/Code/Code.scss" />
+        <option value="$PROJECT_DIR$/src/components/Code/Code.js" />
       </list>
     </option>
   </component>
@@ -190,6 +257,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,14 +281,21 @@
               <item name="cssit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Gradient" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cssit" type="b2602c69:ProjectViewProjectNode" />
               <item name="cssit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Gradient" type="462c0819:PsiDirectoryNode" />
+              <item name="Flexbox" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cssit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cssit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Flexbox" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -228,16 +303,33 @@
               <item name="cssit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Gradient" type="462c0819:PsiDirectoryNode" />
+              <item name="Flexbox" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="GradientPreview" type="462c0819:PsiDirectoryNode" />
+              <item name="FlexboxSingle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cssit" type="b2602c69:ProjectViewProjectNode" />
               <item name="cssit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Gradient" type="462c0819:PsiDirectoryNode" />
+              <item name="Flexbox" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="FlexboxSinglePreview" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cssit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cssit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Flexbox" type="462c0819:PsiDirectoryNode" />
+              <item name="reducer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cssit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cssit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Flexbox" type="462c0819:PsiDirectoryNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -245,48 +337,7 @@
               <item name="cssit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="TextGradient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cssit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cssit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="TextGradient" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cssit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cssit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="TextGradient" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="TextGradientControls" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cssit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cssit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="TextGradient" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="TextGradientPreview" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cssit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cssit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="TextGradient" type="462c0819:PsiDirectoryNode" />
-              <item name="reducer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cssit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cssit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="TextGradient" type="462c0819:PsiDirectoryNode" />
+              <item name="Flexbox" type="462c0819:PsiDirectoryNode" />
               <item name="thunk" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -294,59 +345,23 @@
               <item name="cssit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="TextShadow" type="462c0819:PsiDirectoryNode" />
+              <item name="Gradient" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cssit" type="b2602c69:ProjectViewProjectNode" />
               <item name="cssit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="TextShadow" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cssit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cssit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="TextShadow" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="TextShadowControls" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cssit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cssit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="TextShadow" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="TextShadowPreview" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cssit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cssit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="TextShadow" type="462c0819:PsiDirectoryNode" />
-              <item name="reducer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cssit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cssit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="TextShadow" type="462c0819:PsiDirectoryNode" />
-              <item name="thunk" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectBox" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="defa&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/TextGradient/store/defaultValues.js&#10;de&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/TextGradient/store/defaultValues.js&#10;util&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/globals/Util.js&#10;дефа&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Gradient/store/defaultValues.js&#10;default&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Gradient/store/defaultValues.js&#10;ути&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/globals/Util.js&#10;реду&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Gradient/reducer/reducer.js&#10;defaul&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Gradient/store/defaultValues.js&#10;thunk&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Gradient/thunk/thunkGradient.js&#10;red&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Gradient/reducer/reducer.js&#10;def&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Gradient/store/defaultValues.js&#10;GradientLine&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Gradient/components/GradientLine/GradientLine.scss&#10;thu&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Filters/thunk/thunkFilters.js&#10;filtersc&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Filters/components/FiltersControls/FiltersControls.scss&#10;filter&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Filters/components/FiltersPreview/FiltersPreview.js&#10;ac&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Filters/store/actions.js&#10;U&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/globals/Util.js&#10;text&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/TextShadow/components/TextShadowControls/TextShadowControls.scss&#10;redu&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/TextShadow/reducer/reducer.js&#10;тхунк&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/BoxShadow/thunk/thunkBoxShadow.js&#10;defau&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/BoxShadow/store/defaultValues.js&#10;ut&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/globals/Util.js" />
+    <property name="SearchEverywhereHistoryKey" value="defaul&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Flexbox/store/defaultValues.js&#10;de&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Flexbox/store/defaultValues.js&#10;defa&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Flexbox/store/defaultValues.js&#10;util&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/globals/Util.js&#10;дефа&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Gradient/store/defaultValues.js&#10;default&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Gradient/store/defaultValues.js&#10;ути&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/globals/Util.js&#10;реду&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Gradient/reducer/reducer.js&#10;thunk&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Gradient/thunk/thunkGradient.js&#10;red&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Gradient/reducer/reducer.js&#10;def&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Gradient/store/defaultValues.js&#10;GradientLine&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Gradient/components/GradientLine/GradientLine.scss&#10;thu&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Filters/thunk/thunkFilters.js&#10;filtersc&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Filters/components/FiltersControls/FiltersControls.scss&#10;filter&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Filters/components/FiltersPreview/FiltersPreview.js&#10;ac&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/Filters/store/actions.js&#10;U&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/globals/Util.js&#10;text&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/TextShadow/components/TextShadowControls/TextShadowControls.scss&#10;redu&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/TextShadow/reducer/reducer.js&#10;тхунк&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/BoxShadow/thunk/thunkBoxShadow.js&#10;defau&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/components/BoxShadow/store/defaultValues.js&#10;ut&#9;FILE&#9;file:///Users/narek/Desktop/cssg/cssit/src/globals/Util.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.prettier" value="true" />
@@ -388,22 +403,22 @@
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297362" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info anchor="bottom" id="TypeScript" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3297362" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,284 +429,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/BoxShadow/store/defaultValues.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="1576" column="10" selection-start-line="1576" selection-start-column="10" selection-end-line="1576" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Gradient/components/GradientSingle/GradientSingle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Filters/thunk/thunkFilters.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TextShadow/components/TextShadowSingle/TextShadowSingle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="92" column="72" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BoxShadow/components/BoxShadowControls/BoxShadowControls.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-draggable/typings/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Gradient/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BoxShadow/components/BoxShadowSingle/BoxShadowSingle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="103" column="78" lean-forward="true" selection-start-line="103" selection-start-column="78" selection-end-line="103" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BoxShadow/components/BoxShadowControls/BoxShadowControls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/globals/styles/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="90" selection-start-line="90" selection-end-line="99" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Gradient/components/GradientPreview/GradientPreview.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Code/Code.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BoxShadow/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BoxShadow/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="69" column="123" lean-forward="true" selection-start-line="69" selection-start-column="123" selection-end-line="69" selection-end-column="123" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Gradient/components/GradientLine/GradientLine.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Gradient/components/GradientSingle/GradientSingle.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1431">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Gradient/components/GradientLine/GradientLine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Gradient/components/GradientSingle/GradientSingle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Gradient/reducer/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ImageConverter/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-245">
-          <caret line="66" column="28" lean-forward="true" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BoxShadow/thunk/thunkBoxShadow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BoxShadow/store/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BoxShadow/reducer/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TextGradient/index.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="62" lean-forward="true" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
-          <folding>
-            <element signature="e#221#258#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Navigation/NavigationList/NavigationList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Gradient/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Gradient/components/GradientControls/GradientControls.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="21" lean-forward="true" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Gradient/thunk/thunkGradient.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="26" column="47" selection-end-line="86" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Gradient/store/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="41" lean-forward="true" selection-end-line="34" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Gradient/store/defaultValues.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="8" selection-end-line="19" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Gradient/components/GradientPreview/GradientPreview.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="94" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="94" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TextGradient/components/TextGradientPreview/TextGradientPreview.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/TextGradient/store/defaultValues.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -703,9 +444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="617">
           <caret line="30" column="18" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="30" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -713,16 +451,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
           <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TextShadow/components/TextShadowControls/TextShadowControls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="75" column="22" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="75" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -737,16 +465,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TextShadow/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="102" column="8" lean-forward="true" selection-start-line="102" selection-start-column="8" selection-end-line="104" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -775,9 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="41" column="13" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="41" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,9 +500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -795,19 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="469">
           <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TextGradient/components/TextGradientControls/TextGradientControls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="39" column="88" selection-start-line="39" selection-start-column="88" selection-end-line="39" selection-end-column="88" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -815,16 +514,306 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="91" column="129" selection-start-line="91" selection-start-column="110" selection-end-line="91" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Filters/reducer/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="29" selection-end-line="33" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Filters/store/defaultValues.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="88" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Filters/store/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Filters/thunk/thunkFilters.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Navigation/NavigationList/NavigationList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="40" column="40" lean-forward="true" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Filters/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="49" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SelectBox/SelectBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Flexbox/components/FlexboxMainControls/FlexboxMainControls.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TextGradient/components/TextGradientControls/TextGradientControls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="56" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TextShadow/components/TextShadowControls/TextShadowControls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="64" column="40" lean-forward="true" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Gradient/components/GradientSingle/GradientSingle.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Gradient/components/GradientSingle/GradientSingle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="61" column="22" lean-forward="true" selection-start-line="49" selection-start-column="16" selection-end-line="61" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SelectBox/SelectBox.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TextShadow/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="42" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Flexbox/components/FlexboxControls/FlexboxControls.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BoxShadow/reducer/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="15" column="108" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="108" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BoxShadow/components/BoxShadowControls/BoxShadowControls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BoxShadow/components/BoxShadowSingle/BoxShadowSingle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="26" column="17" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Flexbox/components/FlexboxMainControls/FlexboxMainControls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Flexbox/components/FlexboxControls/FlexboxControls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Preview/Preview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Flexbox/reducer/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/globals/Util.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
+        <state relative-caret-position="511">
+          <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Flexbox/store/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Flexbox/thunk/thunkFlexbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Gradient/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="852">
+          <caret line="49" column="42" lean-forward="true" selection-start-line="36" selection-start-column="36" selection-end-line="49" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Flexbox/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Flexbox/components/FlexboxPreview/FlexboxPreview.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Flexbox/store/defaultValues.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Flexbox/components/FlexboxSinglePreview/FlexboxSinglePreview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Flexbox/components/FlexboxPreview/FlexboxPreview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Flexbox/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Flexbox/components/FlexboxSingle/FlexboxSingle.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Flexbox/components/FlexboxSinglePreview/FlexboxSinglePreview.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Code/Code.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Flexbox/components/FlexboxSingle/FlexboxSingle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Code/Code.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

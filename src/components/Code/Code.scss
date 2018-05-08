@@ -6,6 +6,8 @@
   margin-top: 30px;
   .pre-wrapper {
     padding: 0 70px 0 1.5em;
+    max-height: 300px;
+    overflow: auto;
     &.nowrap {
      pre {
        white-space: nowrap;

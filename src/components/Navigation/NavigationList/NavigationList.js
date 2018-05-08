@@ -34,7 +34,7 @@ const navigationList = (props) => {
 			</NavigationItem>
 			<NavigationItem link="/"
 							subMenu={[
-									{link: '#', text: 'Flexbox'},
+									{link: '/flexbox', text: 'Flexbox'},
 									{link: '#', text: 'CSS Grids'},
 									{link: '#', text: 'CSS Columns'}
 								]}

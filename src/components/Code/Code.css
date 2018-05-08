@@ -5,7 +5,9 @@
   overflow: hidden;
   margin-top: 30px; }
   .code__block .pre-wrapper {
-    padding: 0 70px 0 1.5em; }
+    padding: 0 70px 0 1.5em;
+    max-height: 300px;
+    overflow: auto; }
     .code__block .pre-wrapper.nowrap pre {
       white-space: nowrap; }
   .code__block pre {

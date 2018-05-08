@@ -28,9 +28,6 @@
     position: relative;
     top: 2px; }
 
-.box-shadow__item {
-  padding-top: 20px; }
-
 .gradient-single-index {
   position: absolute;
   left: 7px;
@@ -38,3 +35,6 @@
   color: #1F2667;
   font-weight: 700;
   font-size: 13px; }
+
+.gradient-item.box-shadow__item {
+  padding-top: 20px; }
