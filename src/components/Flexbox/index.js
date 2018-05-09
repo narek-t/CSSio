@@ -2,6 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import * as thunkFlexbox from './thunk/thunkFlexbox'
 import './index.css'
+import * as Util from '../../globals/Util'
 
 import FlexboxMainControls from './components/FlexboxMainControls/FlexboxMainControls'
 import FlexboxControls from './components/FlexboxControls/FlexboxControls'
@@ -39,7 +40,7 @@ const flexbox = (props) => {
 													onItemsMarginChange={(value) => props.itemsMarginChangeHandler(value)}
 													onPrefixesToggle={(event) => props.togglePrefixesHandler(event.target.checked)}
 													onResetState={props.resetStateHandler}
-													onAddItem={props.addItemhandler}/>
+													onAddItem={props.addItemHandler}/>
 											}>
 											<FlexboxPreview flexItems={props.flexItems} />
 										</Preview>
@@ -48,7 +49,8 @@ const flexbox = (props) => {
 							</div>
 
 						<div className="box-shadow__code">
-							<Code />
+							<Code code={Util.transformFlexboxStyles(props.state)}
+								  codeForCopy={Util.transformFlexboxStyles(props.state).join('')}/>
 
 						</div>
 					</div>
@@ -76,7 +78,7 @@ const mapDispatchToProps = dispatch => {
 		resetStateHandler: () => {
 			dispatch(thunkFlexbox.resetState())
 		},
-		addItemhandler: () => {
+		addItemHandler: () => {
 			dispatch(thunkFlexbox.addItem())
 		}
 	}

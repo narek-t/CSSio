@@ -4,7 +4,7 @@ import './SelectBox.css'
 
 const selectBox = (props) => {
 	return (
-		<div className="selectbox">
+		<div className="selectbox" data-tip={props.dataTip}>
 			{ props.title ? <div className="select-title">{props.title}</div> : null }
 			<div className="selectbox-inner">
 				<select onChange={props.onSelectChange} value={props.value}>

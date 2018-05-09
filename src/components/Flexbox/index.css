@@ -1,2 +1,6 @@
 .flexbox__area-wrapper {
   margin-left: 0; }
+
+.tooltip {
+  max-width: 200px !important;
+  text-align: center; }
