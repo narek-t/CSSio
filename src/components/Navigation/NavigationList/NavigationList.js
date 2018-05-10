@@ -36,7 +36,7 @@ const navigationList = (props) => {
 							subMenu={[
 									{link: '/flexbox', text: 'Flexbox'},
 									{link: '#', text: 'CSS Grids'},
-									{link: '#', text: 'CSS Columns'}
+									{link: '/columns', text: 'CSS Columns'}
 								]}
 							isClickable={false}>
 				Layouts

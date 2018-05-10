@@ -1,0 +1,16 @@
+.range__item-slider.range__item-slider-columns {
+  width: 200px;
+  padding-right: 70px;
+  margin-top: 15px;
+  float: left; }
+  .range__item-slider.range__item-slider-columns .range__item-input {
+    top: -2px; }
+
+.input.range__item-label-input.columns-gap-input {
+  width: 70px; }
+
+.column-gap-box.font-size-box {
+  padding-top: 13px !important; }
+
+.color-with-label.column-style-box {
+  padding-top: 19px !important; }

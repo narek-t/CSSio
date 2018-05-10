@@ -258,5 +258,18 @@ ${state.prefixes ?
 	allStyles.push(mainStyles, defaultItemStyles, itemStyles.join(''))
 
 	return allStyles
-
 };
+
+export const transformColumnStyles = (state) => {
+	return `-webkit-column-count: ${state.columnCount};
+-moz-column-count: ${state.columnCount};
+column-count: ${state.columnCount};
+-webkit-column-gap: ${state.columnGap};
+-moz-column-gap: ${state.columnGap};
+column-gap: ${state.columnGap};
+${state.columnRuleWidth !==0 ? 
+`-webkit-column-rule: ${state.columnRuleWidth}px ${state.columnRuleStyle} ${state.columnRuleColor};
+-moz-column-rule: ${state.columnRuleWidth}px ${state.columnRuleStyle} ${state.columnRuleColor};
+column-rule: ${state.columnRuleWidth}px ${state.columnRuleStyle} ${state.columnRuleColor};` : ''
+}`
+}

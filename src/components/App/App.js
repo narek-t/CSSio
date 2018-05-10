@@ -15,6 +15,7 @@ import ImageConverter from '../ImageConverter/index'
 import Gradient from '../Gradient/index'
 import TextGradient from '../TextGradient/index'
 import Flexbox from '../Flexbox/index'
+import Columns from '../Columns/index'
 
 class App extends Component {
     render() {
@@ -29,6 +30,7 @@ class App extends Component {
 				<Route path="/gradient" component={Gradient}/>
 				<Route path="/text-gradient" component={TextGradient}/>
 				<Route path="/flexbox" component={Flexbox}/>
+				<Route path="/columns" component={Columns}/>
 				<Footer/>
             </Aux>
         );
