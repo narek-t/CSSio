@@ -16,6 +16,7 @@ import Gradient from '../Gradient/index'
 import TextGradient from '../TextGradient/index'
 import Flexbox from '../Flexbox/index'
 import Columns from '../Columns/index'
+import Transform from '../Transform/index'
 
 class App extends Component {
     render() {
@@ -31,6 +32,7 @@ class App extends Component {
 				<Route path="/text-gradient" component={TextGradient}/>
 				<Route path="/flexbox" component={Flexbox}/>
 				<Route path="/columns" component={Columns}/>
+				<Route path="/transform" component={Transform}/>
 				<Footer/>
             </Aux>
         );

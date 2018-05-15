@@ -273,3 +273,28 @@ ${state.columnRuleWidth !==0 ?
 column-rule: ${state.columnRuleWidth}px ${state.columnRuleStyle} ${state.columnRuleColor};` : ''
 }`
 }
+
+export const transformTransformStyles = (state) => {
+	return `${(state.transforms[0].value !== 1 || state.transforms[1].value !== 1 || state.transforms[2].value !== 1) ? `scale3d(${state.transforms[0].value}, ${state.transforms[1].value}, ${state.transforms[2].value})` : ''} ${state.transforms[3].value !== 0 ? `rotateX(${state.transforms[3].value}deg)` : ''} ${state.transforms[4].value !== 0 ? `rotateY(${state.transforms[4].value}deg)` : ''} ${state.transforms[5].value !== 0 ? `rotateZ(${state.transforms[5].value}deg)` : ''} ${(state.transforms[6].value !== 0 || state.transforms[7].value !== 0 || state.transforms[8].value !== 0) ? `translate3D(${state.transforms[6].value}px, ${state.transforms[7].value}px, ${state.transforms[8].value}px)` : ''} ${(state.transforms[9].value !== 0 || state.transforms[10].value !== 0) ? `skew(${state.transforms[9].value}deg, ${state.transforms[10].value}deg)` : ''}`
+}
+
+export const generateTransformStyles = (state) => {
+	const showTransformStyles = transformTransformStyles(state).trim();
+
+	const transformStyles = `transform: ${showTransformStyles};
+-webkit-transform: ${showTransformStyles};
+-moz-transform: ${showTransformStyles};
+-o-transform; ${showTransformStyles};
+-ms-transform: ${showTransformStyles};`
+
+	const showPerspectiveStyles = state.transforms[11].value !==1000 || state.transforms[12].value !==50 || state.transforms[13].value !== 50;
+	const perspectiveStyles = `-webkit-perspective: ${state.transforms[11].value}px;
+perspective: ${state.transforms[11].value}px;
+-webkit-perspective-origin: ${state.transforms[12].value}% ${state.transforms[13].value}%;
+perspective-origin: ${state.transforms[12].value}% ${state.transforms[13].value}%;`
+
+	return `${showTransformStyles ? transformStyles : ''}
+	${showPerspectiveStyles ? perspectiveStyles : ''}`
+
+
+}

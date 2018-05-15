@@ -25,7 +25,6 @@ class Columns extends Component {
 		})
 	}
 
-
 	changeColumn = (value, type) => {
 		this.setState({
 			[type]: value
