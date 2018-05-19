@@ -295,6 +295,308 @@ perspective-origin: ${state.transforms[12].value}% ${state.transforms[13].value}
 
 	return `${showTransformStyles ? transformStyles : ''}
 	${showPerspectiveStyles ? perspectiveStyles : ''}`
+}
+
+export const changeObjectItem = (object, value, name) => {
+	return {
+		...object,
+		[name]: value,
+	}
+}
+
+export const transformKenBurnsStyles = (animationSettings) => {
+
+	let animationCount
+	if (animationSettings.iteration === 1 && !animationSettings.infinite) {
+		animationCount = ''
+	} else if (animationSettings.iteration !== 1 && !animationSettings.infinite) {
+		animationCount = animationSettings.iteration
+	} else if (animationSettings.infinite) {
+		animationCount = 'infinite'
+	}
+
+	const animationStyles = `${animationSettings.kenBurnsType} ${animationSettings.duration}ms ${animationSettings.timingFunction}${animationSettings.delay !== 0 ? ' ' + animationSettings.delay+'ms' : ''}${animationCount ? ' ' + animationCount : ''}${animationSettings.direction !== 'normal' ? ' ' + animationSettings.direction: ''}${animationSettings.fillMode !== 'none' ? ' ' + animationSettings.fillMode: ''}`
+
+	let animationKeyframes
+
+	switch (animationSettings.kenBurnsType) {
+		case 'kenburns-top' :
+			animationKeyframes = `@-webkit-keyframes kenburns-top {
+\xa0\xa00% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1) translateY(0);
+\xa0\xa0\xa0\xa0transform: scale(1) translateY(0);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: 50% 16%;
+\xa0\xa0\xa0\xa0transform-origin: 50% 16%;
+\xa0\xa0}
+\xa0\xa0100% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1.25) translateY(-15px);
+\xa0\xa0\xa0\xa0transform: scale(1.25) translateY(-15px);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: top;
+\xa0\xa0\xa0\xa0transform-origin: top;
+\xa0\xa0}
+}
+@keyframes kenburns-top {
+\xa0\xa00% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1) translateY(0);
+\xa0\xa0\xa0\xa0transform: scale(1) translateY(0);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: 50% 16%;
+\xa0\xa0\xa0\xa0transform-origin: 50% 16%;
+\xa0\xa0}
+\xa0\xa0100% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1.25) translateY(-15px);
+\xa0\xa0\xa0\xa0transform: scale(1.25) translateY(-15px);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: top;
+\xa0\xa0\xa0\xa0transform-origin: top;
+\xa0\xa0}
+}`
+			break
+		case 'kenburns-top-right' :
+			animationKeyframes = `@-webkit-keyframes kenburns-top-right {
+\xa0\xa00% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: 84% 16%;
+\xa0\xa0\xa0\xa0transform-origin: 84% 16%;
+\xa0\xa0}
+\xa0\xa0100% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1.25) translate(20px, -15px);
+\xa0\xa0\xa0\xa0transform: scale(1.25) translate(20px, -15px);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: right top;
+\xa0\xa0\xa0\xa0transform-origin: right top;
+\xa0\xa0}
+}
+@keyframes kenburns-top-right {
+\xa0\xa00% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: 84% 16%;
+\xa0\xa0\xa0\xa0transform-origin: 84% 16%;
+\xa0\xa0}
+\xa0\xa0100% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1.25) translate(20px, -15px);
+\xa0\xa0\xa0\xa0transform: scale(1.25) translate(20px, -15px);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: right top;
+\xa0\xa0\xa0\xa0transform-origin: right top;
+\xa0\xa0}
+}`
+			break
+
+		case 'kenburns-right' :
+			animationKeyframes = `@-webkit-keyframes kenburns-right {
+\xa0\xa00% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: 84% 50%;
+\xa0\xa0\xa0\xa0transform-origin: 84% 50%;
+\xa0\xa0}
+\xa0\xa0100% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1.25) translateX(20px);
+\xa0\xa0\xa0\xa0transform: scale(1.25) translateX(20px);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: right;
+\xa0\xa0\xa0\xa0transform-origin: right;
+\xa0\xa0}
+}
+@keyframes kenburns-right {
+\xa0\xa00% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: 84% 50%;
+\xa0\xa0\xa0\xa0transform-origin: 84% 50%;
+\xa0\xa0}
+\xa0\xa0100% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1.25) translateX(20px);
+\xa0\xa0\xa0\xa0transform: scale(1.25) translateX(20px);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: right;
+\xa0\xa0\xa0\xa0transform-origin: right;
+\xa0\xa0}
+}`
+			break
+
+		case 'kenburns-bottom-right' :
+			animationKeyframes = `@-webkit-keyframes kenburns-bottom-right {
+\xa0\xa00% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: 84% 84%;
+\xa0\xa0\xa0\xa0transform-origin: 84% 84%;
+\xa0\xa0}
+\xa0\xa0100% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1.25) translate(20px, 15px);
+\xa0\xa0\xa0\xa0 transform: scale(1.25) translate(20px, 15px);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: right bottom;
+\xa0\xa0\xa0\xa0transform-origin: right bottom;
+\xa0\xa0}
+}
+@keyframes kenburns-bottom-right {
+\xa0\xa00% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: 84% 84%;
+\xa0\xa0\xa0\xa0transform-origin: 84% 84%;
+\xa0\xa0}
+\xa0\xa0100% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1.25) translate(20px, 15px);
+\xa0\xa0\xa0\xa0 transform: scale(1.25) translate(20px, 15px);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: right bottom;
+\xa0\xa0\xa0\xa0transform-origin: right bottom;
+\xa0\xa0}
+}`
+			break
+
+		case 'kenburns-bottom' :
+			animationKeyframes = `@-webkit-keyframes kenburns-bottom {
+\xa0\xa00% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1) translateY(0);
+\xa0\xa0\xa0\xa0transform: scale(1) translateY(0);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: 50% 84%;
+\xa0\xa0\xa0\xa0transform-origin: 50% 84%;
+\xa0\xa0}
+\xa0\xa0100% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1.25) translateY(15px);
+\xa0\xa0\xa0\xa0transform: scale(1.25) translateY(15px);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: bottom;
+\xa0\xa0\xa0\xa0transform-origin: bottom;
+\xa0\xa0}
+}
+@keyframes kenburns-bottom {
+\xa0\xa00% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1) translateY(0);
+\xa0\xa0\xa0\xa0transform: scale(1) translateY(0);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: 50% 84%;
+\xa0\xa0\xa0\xa0transform-origin: 50% 84%;
+\xa0\xa0}
+\xa0\xa0100% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1.25) translateY(15px);
+\xa0\xa0\xa0\xa0transform: scale(1.25) translateY(15px);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: bottom;
+\xa0\xa0\xa0\xa0transform-origin: bottom;
+\xa0\xa0}
+}`
+			break
+
+		case 'kenburns-bottom-left' :
+			animationKeyframes = `@-webkit-keyframes kenburns-bottom-left {
+\xa0\xa00% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: 16% 84%;
+\xa0\xa0\xa0\xa0transform-origin: 16% 84%;
+\xa0\xa0}
+\xa0\xa0100% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1.25) translate(-20px, 15px);
+\xa0\xa0\xa0\xa0transform: scale(1.25) translate(-20px, 15px);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: left bottom;
+\xa0\xa0\xa0\xa0transform-origin: left bottom;
+\xa0\xa0}
+}
+@keyframes kenburns-bottom-left {
+\xa0\xa00% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: 16% 84%;
+\xa0\xa0\xa0\xa0transform-origin: 16% 84%;
+\xa0\xa0}
+\xa0\xa0100% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1.25) translate(-20px, 15px);
+\xa0\xa0\xa0\xa0transform: scale(1.25) translate(-20px, 15px);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: left bottom;
+\xa0\xa0\xa0\xa0transform-origin: left bottom;
+\xa0\xa0}
+}`
+			break
+
+		case 'kenburns-left' :
+			animationKeyframes = `@-webkit-keyframes kenburns-left {
+\xa0\xa00% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: 16% 50%;
+\xa0\xa0\xa0\xa0transform-origin: 16% 50%;
+\xa0\xa0}
+\xa0\xa0100% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1.25) translate(-20px, 15px);
+\xa0\xa0\xa0\xa0transform: scale(1.25) translate(-20px, 15px);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: left;
+\xa0\xa0\xa0\xa0transform-origin: left;
+\xa0\xa0}
+}
+@keyframes kenburns-left {
+\xa0\xa00% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: 16% 50%;
+\xa0\xa0\xa0\xa0transform-origin: 16% 50%;
+\xa0\xa0}
+\xa0\xa0100% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1.25) translate(-20px, 15px);
+\xa0\xa0\xa0\xa0transform: scale(1.25) translate(-20px, 15px);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: left;
+\xa0\xa0\xa0\xa0transform-origin: left;
+\xa0\xa0}
+}`
+			break
+		default :
+			animationKeyframes = `@-webkit-keyframes kenburns-top-left {
+\xa0\xa00% {
+\xa0\xa0\xa0\xa0 -webkit-transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: 16% 16%;
+\xa0\xa0\xa0\xa0transform-origin: 16% 16%;
+\xa0\xa0}
+\xa0\xa0100% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1.25) translate(-20px, -15px);
+\xa0\xa0\xa0\xa0transform: scale(1.25) translate(-20px, -15px);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: top left;
+\xa0\xa0\xa0\xa0transform-origin: top left;
+\xa0\xa0}
+}
+@keyframes kenburns-top-left {
+\xa0\xa00% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0transform: scale(1) translate(0, 0);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: 16% 16%;
+\xa0\xa0\xa0\xa0transform-origin: 16% 16%;
+\xa0\xa0}
+\xa0\xa0100% {
+\xa0\xa0\xa0\xa0-webkit-transform: scale(1.25) translate(-20px, -15px);
+\xa0\xa0\xa0\xa0transform: scale(1.25) translate(-20px, -15px);
+\xa0\xa0\xa0\xa0-webkit-transform-origin: top left;
+\xa0\xa0\xa0\xa0transform-origin: top left;
+\xa0\xa0}
+}`
+	}
+
+
+
+	return {
+		animationStyles,
+		animationKeyframes
+	}
+}
+
+export const transformKenBurnsStylesForCode = (animationSettings) => {
+	const animationStyles = transformKenBurnsStyles(animationSettings).animationStyles
+	const animationKeyframes = transformKenBurnsStyles(animationSettings).animationKeyframes
+
+	return `/**
+ * ----------------------------------------
+ * animation class
+ * ----------------------------------------
+ **/
+
+.${animationSettings.kenBurnsType} {
+\xa0\xa0\xa0\xa0-webkit-animation: ${animationStyles};
+\xa0\xa0\xa0\xa0animation: ${animationStyles};
+}
+
+/**
+ * ----------------------------------------
+ * animation ${animationSettings.kenBurnsType}
+ * ----------------------------------------
+ **/
+
+${animationKeyframes}`
+
 
 
 }

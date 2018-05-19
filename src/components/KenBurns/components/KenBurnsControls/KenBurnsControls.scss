@@ -1,0 +1,27 @@
+.ken-burns__controls {
+  .file__input-label {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+.kenburns-type-select {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px;
+  .selectbox {
+    margin-left: 65px;
+  }
+}
+
+.kenburns-type-select-title {
+  float: left;
+  margin-top: 6px;
+}
+
+.animation-reload {
+  background-image: url("../../../../assets/images/reload.png");
+  margin-top: 21px;
+  display: inline-block;
+  vertical-align: top;
+}

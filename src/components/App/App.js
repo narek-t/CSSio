@@ -17,6 +17,7 @@ import TextGradient from '../TextGradient/index'
 import Flexbox from '../Flexbox/index'
 import Columns from '../Columns/index'
 import Transform from '../Transform/index'
+import KenBurns from '../KenBurns/index'
 
 class App extends Component {
     render() {
@@ -33,6 +34,7 @@ class App extends Component {
 				<Route path="/flexbox" component={Flexbox}/>
 				<Route path="/columns" component={Columns}/>
 				<Route path="/transform" component={Transform}/>
+				<Route path="/ken-burns" component={KenBurns}/>
 				<Footer/>
             </Aux>
         );

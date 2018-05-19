@@ -15,6 +15,7 @@ import reducerGradient from './components/Gradient/reducer/reducer'
 import reducerTextGradient from './components/TextGradient/reducer/reducer'
 import reducerFlexbox from './components/Flexbox/reducer/reducer'
 import reducerTransform from './components/Transform/reducer/reducer'
+import reducerKenBurns from './components/KenBurns/reducer/reducer'
 
 import registerServiceWorker from './registerServiceWorker';
 
@@ -25,7 +26,8 @@ const rootReducer = combineReducers({
 	reducerGradient,
 	reducerTextGradient,
 	reducerFlexbox,
-	reducerTransform
+	reducerTransform,
+	reducerKenBurns
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose

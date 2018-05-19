@@ -35,15 +35,23 @@ const navigationList = (props) => {
 			<NavigationItem link="/"
 							subMenu={[
 									{link: '/flexbox', text: 'Flexbox'},
-									{link: '#', text: 'CSS Grids'},
 									{link: '/columns', text: 'CSS Columns'}
 								]}
 							isClickable={false}>
 				Layouts
 			</NavigationItem>
-			<NavigationItem link="/" isClickable={true}>Transitions</NavigationItem>
-			<NavigationItem link="/" isClickable={true}>Animations</NavigationItem>
 			<NavigationItem link="/transform" isClickable={true}>Transforms</NavigationItem>
+			<NavigationItem link="/"
+							subMenu={[
+								{link: '/gradient-animator', text: 'Gradient animator'},
+								{link: '/ken-burns', text: 'Ken Burns'}
+							]}
+							isClickable={false}>
+				Animations
+			</NavigationItem>
+			<NavigationItem link="/" isClickable={true}>Transitions</NavigationItem>
+			{/*<NavigationItem link="/" isClickable={true}>Animations</NavigationItem>*/}
+
 			<NavigationItem link="/" isClickable={true}>Borders</NavigationItem>
 
 		</ul>

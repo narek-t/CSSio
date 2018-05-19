@@ -1,6 +1,5 @@
 import React from 'react';
 import './FiltersControls.css';
-
 const filtersControls = (props) => {
 
 	return (

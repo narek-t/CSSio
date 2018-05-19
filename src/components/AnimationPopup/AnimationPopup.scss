@@ -1,0 +1,83 @@
+.animation-settings {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 25px;
+  padding-top: 22px;
+  &__title {
+    padding-left: 25px;
+    background: url("../../assets/images/settings.png") left center no-repeat;
+    background-size: 18px 18px;
+    cursor: pointer;
+    &:hover {
+      color: #139cda;
+    }
+  }
+}
+
+.animation-inner {
+  position: relative;
+  z-index: 3;
+  padding: 20px;
+}
+
+.animation-popover {
+  position: absolute;
+  z-index: 2;
+  width: 250px;
+  border: 1px solid #eee;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px, rgba(0, 0, 0, 0.3) 0px 4px 8px;
+  background: #fff;
+}
+
+.animation-cover {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.animation-inner-content {
+
+  &.with-unit {
+    margin-right: 40px;
+  }
+  &.with-checkbox {
+    margin-right: 80px;
+  }
+  input {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+  }
+  input[disabled] {
+    background: #eee;
+    cursor: not-allowed;
+  }
+}
+
+.animation-inner-item {
+  position: relative;
+  margin-bottom: 10px;
+  label {
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    top: 29px;
+    input {
+      margin-right: 10px;
+    }
+  }
+}
+
+.animation-inner-unit {
+  position: absolute;
+  right: 0;
+  top: 24px;
+}
+
+.animation-inner-heading {
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: block;
+}
