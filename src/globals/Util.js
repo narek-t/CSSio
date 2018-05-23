@@ -144,7 +144,7 @@ export const fileSizes = (bytes,decimals) => {
 	return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
 };
 
-export const transformGradientStyles = (gradients, angle, type, predestination) => {
+export const transformGradientStyles = (gradients, angle, type, predestination, forClass) => {
 	const sortedGradients = sortArray(gradients, 'positionPercentage');
 	const mappedGradients = sortedGradients.map(gradient => {
 		return (
@@ -158,7 +158,7 @@ export const transformGradientStyles = (gradients, angle, type, predestination) 
 	}
 
 	if (predestination === 'forCode') {
-		gradientCss = 'background: ' + mappedGradients[0].split(' ')[0] + ';\r\nbackground: ' + gradientCss + ';'
+		gradientCss = 'background: ' + mappedGradients[0].split(' ')[0] + ';\r\n' + (forClass ? '\xa0\xa0\xa0\xa0' : '' ) + 'background: ' + gradientCss + ';'
 	}
 
 	if (predestination === 'forTextGradientCode') {
@@ -168,6 +168,43 @@ export const transformGradientStyles = (gradients, angle, type, predestination) 
 	return gradientCss
 
 };
+
+export const transformGradientAnimatorStyles = (gradients, angle, type, predestination, animationSettings) => {
+	const gradientStyle = transformGradientStyles(gradients, angle, type, predestination, true);
+	const animationStyles = transformKenBurnsStyles(animationSettings).animationStyles
+
+	return `/**
+ * ----------------------------------------
+ * animation class
+ * ----------------------------------------
+ **/
+
+.animated-gradient {
+\xa0\xa0\xa0\xa0${gradientStyle}
+\xa0\xa0\xa0\xa0background-size: 400% 400%;
+\xa0\xa0\xa0\xa0/* You can change animation name from 'undefined' */
+\xa0\xa0\xa0\xa0animation: ${animationStyles};
+\xa0\xa0\xa0\xa0-webkit-animation: ${animationStyles};
+}
+
+/**
+ * ----------------------------------------
+ * animation styles. You can change
+ * animation name from 'undefined'
+ * ----------------------------------------
+ **/
+
+ @-webkit-keyframes undefined {
+\xa0\xa0\xa0\xa00%{background-position:37% 0%}
+\xa0\xa0\xa0\xa050%{background-position:64% 100%}
+\xa0\xa0\xa0\xa0100%{background-position:37% 0%}
+}
+@keyframes undefined {
+\xa0\xa0\xa0\xa00%{background-position:37% 0%}
+\xa0\xa0\xa0\xa050%{background-position:64% 100%}
+\xa0\xa0\xa0\xa0100%{background-position:37% 0%}
+}`
+}
 
 
 export const sortArray = (array, key) => {
