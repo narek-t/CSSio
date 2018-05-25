@@ -1,0 +1,29 @@
+.contact-form {
+  position: absolute;
+  z-index: 2;
+  max-width: 500px;
+  width: 100%;
+  background: #fff; }
+
+.contact-form-inner {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  padding: 30px;
+  top: 0;
+  left: 0; }
+  .contact-form-inner input {
+    margin-bottom: 20px; }
+  .contact-form-inner textarea {
+    height: 200px;
+    resize: none; }
+  .contact-form-inner button {
+    margin-top: 20px; }
+
+.contact-form-cover {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.4); }
