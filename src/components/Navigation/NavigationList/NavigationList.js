@@ -49,10 +49,10 @@ const navigationList = (props) => {
 							isClickable={false}>
 				Animations
 			</NavigationItem>
-			<NavigationItem link="/" isClickable={true}>Transitions</NavigationItem>
+			{/*<NavigationItem link="/" isClickable={true}>Transitions</NavigationItem>*/}
 			{/*<NavigationItem link="/" isClickable={true}>Animations</NavigationItem>*/}
 
-			<NavigationItem link="/" isClickable={true}>Borders</NavigationItem>
+			{/*<NavigationItem link="/" isClickable={true}>Borders</NavigationItem>*/}
 
 		</ul>
 	)
