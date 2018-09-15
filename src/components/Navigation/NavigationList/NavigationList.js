@@ -40,7 +40,6 @@ const navigationList = (props) => {
 							isClickable={false}>
 				Layouts
 			</NavigationItem>
-			<NavigationItem link="/transform" isClickable={true}>Transforms</NavigationItem>
 			<NavigationItem link="/"
 							subMenu={[
 								{link: '/gradient-animator', text: 'Gradient animator'},
@@ -49,6 +48,7 @@ const navigationList = (props) => {
 							isClickable={false}>
 				Animations
 			</NavigationItem>
+			<NavigationItem link="/transform" isClickable={true}>Transforms</NavigationItem>
 			{/*<NavigationItem link="/" isClickable={true}>Transitions</NavigationItem>*/}
 			{/*<NavigationItem link="/" isClickable={true}>Animations</NavigationItem>*/}
 

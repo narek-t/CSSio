@@ -21,7 +21,7 @@ const reducerFlexbox = (state = defaultValues, action) => {
 		case actionsFlexbox.ADD_ITEM :
 			return {
 				...state,
-				flexItems: state.flexItems.concat({...defaultValues.flexItem})
+				flexItems: state.flexItems.concat({...defaultValues.flexItem, id: Util.uniqID()})
 			}
 
 		case actionsFlexbox.DELETE_ITEM :

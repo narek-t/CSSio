@@ -17,7 +17,7 @@ const flexboxPreview = (props) => {
 				{
 					Array.isArray(props.flexItems) && props.flexItems.length ?
 						props.flexItems.map((flexItem, index) => {
-							return <FlexboxSinglePreview key={index} index={index} item={flexItem} margin={props.margin} />
+							return <FlexboxSinglePreview key={flexItem.id} index={index} item={flexItem} margin={props.margin} />
 						}) : null
 				}
 			</div>

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Aux from '../../hoc/Aux/Aux'
 import './App.css'
 
@@ -25,18 +25,21 @@ class App extends Component {
         return (
             <Aux>
 				<Header />
-				<Route path="/" exact component={IndexPage}/>
-				<Route path="/box-shadow" component={BoxShadow}/>
-				<Route path="/text-shadow" component={TextShadow}/>
-				<Route path="/filters" component={Filters}/>
-				<Route path="/image-to-base64" component={ImageConverter}/>
-				<Route path="/gradient" component={Gradient}/>
-				<Route path="/text-gradient" component={TextGradient}/>
-				<Route path="/flexbox" component={Flexbox}/>
-				<Route path="/columns" component={Columns}/>
-				<Route path="/transform" component={Transform}/>
-				<Route path="/ken-burns" component={KenBurns}/>
-				<Route path="/gradient-animator" component={AnimatedGradient}/>
+				<Switch>
+					<Route path="/" exact component={IndexPage}/>
+					<Route path="/box-shadow" component={BoxShadow}/>
+					<Route path="/text-shadow" component={TextShadow}/>
+					<Route path="/filters" component={Filters}/>
+					<Route path="/image-to-base64" component={ImageConverter}/>
+					<Route path="/gradient" component={Gradient}/>
+					<Route path="/text-gradient" component={TextGradient}/>
+					<Route path="/flexbox" component={Flexbox}/>
+					<Route path="/columns" component={Columns}/>
+					<Route path="/transform" component={Transform}/>
+					<Route path="/ken-burns" component={KenBurns}/>
+					<Route path="/gradient-animator" component={AnimatedGradient}/>
+					<Route component={IndexPage} />
+				</Switch>
 				<Footer/>
             </Aux>
         );

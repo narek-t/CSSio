@@ -9,7 +9,8 @@ const filtersControls = (props) => {
 				Upload your image
 				<input className="file__input"
 					   type="file"
-					   onChange={(e)=>props.onImageChange(e)} />
+						 onChange={(e)=>props.onImageChange(e)}
+						 onClick={(e) => e.target.value = null} />
 			</label>
 
 			<button className="reset-box box-shadow__reset"

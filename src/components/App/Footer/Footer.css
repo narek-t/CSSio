@@ -2,4 +2,24 @@
   background: #fff;
   border-top: 1px solid #DFE1E6;
   flex-shrink: 0;
-  padding: 25px 0; }
+  padding: 15px 0; }
+  .site-footer .copyright {
+    float: left;
+    margin-top: 8px; }
+  .site-footer .contacts {
+    float: right; }
+  .site-footer .contact {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    opacity: .7; }
+    .site-footer .contact.github {
+      background: url(../../../assets/images/github.png) center center no-repeat; }
+    .site-footer .contact.linkedin {
+      background: url(../../../assets/images/linkedin.png) center center no-repeat; }
+    .site-footer .contact.email {
+      background: url(../../../assets/images/email.png) center center no-repeat; }
+    .site-footer .contact:hover {
+      opacity: 1; }

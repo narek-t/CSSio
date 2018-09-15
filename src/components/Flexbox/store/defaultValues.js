@@ -13,6 +13,7 @@ const defaultValues = {
 			flexShrink: 1,
 			flexBasis: 'auto',
 			alignSelf: 'auto',
+			id: 'id1'
 		},
 		{
 			order: 0,
@@ -20,6 +21,7 @@ const defaultValues = {
 			flexShrink: 1,
 			flexBasis: 'auto',
 			alignSelf: 'auto',
+			id: 'id2'
 		},
 		{
 			order: 0,
@@ -27,6 +29,7 @@ const defaultValues = {
 			flexShrink: 1,
 			flexBasis: 'auto',
 			alignSelf: 'auto',
+			id: 'id3'
 		},
 		{
 			order: 0,
@@ -34,6 +37,7 @@ const defaultValues = {
 			flexShrink: 1,
 			flexBasis: 'auto',
 			alignSelf: 'auto',
+			id: 'id4'
 		},
 	],
 	display: 'flex',
