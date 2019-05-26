@@ -21,10 +21,9 @@ class IndexPage extends Component {
 			<main className="main-content indexpage one-page">
 				<div className="index-info">
 					<h1>What is this?</h1>
-					<p><strong>CSSit.io</strong> is a free tool that lets you convert your ideas to CSS :)<br /> </p>
+					<p><strong>CSSio.net</strong> is a free tool that lets you convert your ideas to CSS :)<br /> </p>
 					<div className="line">
-						<p>Feel free to use all this tools, and contact me (<a href="mailto:support@cssit.io">support@cssit.io</a>) if you have an idea, tell me what
-							kind of tools you want to add in this website.</p>
+						<p>Feel free to use all this tools, and contact me (<a href="mailto:support@cssio.net">support@cssio.net</a>) if you have an idea, tell me what kind of tools you want to add in this website.</p>
 					</div>
 				</div>
 				{this.state.displayContactForm ? <ContactForm handleClose={this.handleClose} /> : null }

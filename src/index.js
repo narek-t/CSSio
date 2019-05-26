@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { hydrate, render } from "react-dom";
 import {createStore, combineReducers, applyMiddleware, compose} from 'redux'
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux'
@@ -44,5 +44,11 @@ const app = (
 	</Provider>
 );
 
-ReactDOM.render(app, document.getElementById('root'));
+const rootElement = document.getElementById("root");
+if (rootElement.hasChildNodes()) {
+  hydrate(app, rootElement);
+} else {
+  render(app, rootElement);
+}
+
 registerServiceWorker();

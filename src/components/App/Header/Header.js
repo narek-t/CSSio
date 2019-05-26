@@ -8,10 +8,10 @@ const header = (props) => {
 		<header className="site-header">
 			<div className="container">
 				<Link to="/" className="logo">
-					<span className="io">.io </span>
+					<span className="io">.net </span>
 					<span className="bracket">{'{'}</span>
 					<span className="css"> CSS: </span>
-					<span className="it">it </span>
+					<span className="it">io </span>
 					<span className="bracket">{'}'}</span>
 				</Link>
 				<NavigationList/>
