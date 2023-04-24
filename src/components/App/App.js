@@ -27,18 +27,18 @@ class App extends Component {
             <Aux>
 				<Header />
 				<Switch>
-					<Route path="/" exact component={IndexPage}/>
-					<Route path="/box-shadow" component={BoxShadow}/>
-					<Route path="/text-shadow" component={TextShadow}/>
-					<Route path="/filters" component={Filters}/>
-					<Route path="/image-to-base64" component={ImageConverter}/>
-					<Route path="/gradient" component={Gradient}/>
-					<Route path="/text-gradient" component={TextGradient}/>
-					<Route path="/flexbox" component={Flexbox}/>
-					<Route path="/columns" component={Columns}/>
-					<Route path="/transform" component={Transform}/>
-					<Route path="/ken-burns" component={KenBurns}/>
-					<Route path="/gradient-animator" component={AnimatedGradient}/>
+					<Route path={`${process.env.PUBLIC_URL}/`} exact component={IndexPage}/>
+					<Route path={`${process.env.PUBLIC_URL}/box-shadow`} component={BoxShadow}/>
+					<Route path={`${process.env.PUBLIC_URL}/text-shadow`} component={TextShadow}/>
+					<Route path={`${process.env.PUBLIC_URL}/filters`} component={Filters}/>
+					<Route path={`${process.env.PUBLIC_URL}/image-to-base64`} component={ImageConverter}/>
+					<Route path={`${process.env.PUBLIC_URL}/gradient`} component={Gradient}/>
+					<Route path={`${process.env.PUBLIC_URL}/text-gradient`} component={TextGradient}/>
+					<Route path={`${process.env.PUBLIC_URL}/flexbox`} component={Flexbox}/>
+					<Route path={`${process.env.PUBLIC_URL}/columns`} component={Columns}/>
+					<Route path={`${process.env.PUBLIC_URL}/transform`} component={Transform}/>
+					<Route path={`${process.env.PUBLIC_URL}/ken-burns`} component={KenBurns}/>
+					<Route path={`${process.env.PUBLIC_URL}/gradient-animator`} component={AnimatedGradient}/>
 					<Route component={NotFountPage} />
 				</Switch>
 				<Footer/>

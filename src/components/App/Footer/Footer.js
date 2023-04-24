@@ -9,7 +9,7 @@ const footer = () => {
 				<div className="contacts">
 					<a href="https://github.com/narek-t" rel="noopener noreferrer" target="_blank" className="github contact"></a>
 					<a href="https://www.linkedin.com/in/narek-t" rel="noopener noreferrer" target="_blank" className="linkedin contact"></a>
-					<a href="mailto:narek.tarverdyan@bk.ru" className="email contact"></a>
+					<a href="mailto:nktarverdyan@gmail.com" className="email contact"></a>
 				</div>
 			</div>
 		</footer>

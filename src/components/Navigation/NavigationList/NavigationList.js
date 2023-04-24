@@ -6,49 +6,49 @@ const navigationList = (props) => {
 	return (
 		<ul className="menu">
 
-			<NavigationItem link="/"
+			<NavigationItem link={`${process.env.PUBLIC_URL}/`}
 							subMenu={[
-									{link: '/box-shadow', text: 'Box shadow'},
-									{link: '/text-shadow', text: 'Text shadow'}
+									{link: `${process.env.PUBLIC_URL}/box-shadow`, text: 'Box shadow'},
+									{link: `${process.env.PUBLIC_URL}/text-shadow`, text: 'Text shadow'}
 								]}
 							isClickable={false}>
 				Shadows
 			</NavigationItem>
 
-			<NavigationItem link="/"
+			<NavigationItem link={`${process.env.PUBLIC_URL}/`}
 							subMenu={[
-								{link: '/filters', text: 'Filters'},
-								{link: '/image-to-base64', text: 'Image to Base64'},
+								{link: `${process.env.PUBLIC_URL}/filters`, text: 'Filters'},
+								{link: `${process.env.PUBLIC_URL}/image-to-base64`, text: 'Image to Base64'},
 							]}
 							isClickable={false}>
 				Images
 			</NavigationItem>
 
-			<NavigationItem link="/"
+			<NavigationItem link={`${process.env.PUBLIC_URL}/`}
 							subMenu={[
-									{link: '/gradient', text: 'Box gradient'},
-									{link: '/text-gradient', text: 'Text gradient'}
+									{link: `${process.env.PUBLIC_URL}/gradient`, text: 'Box gradient'},
+									{link: `${process.env.PUBLIC_URL}/text-gradient`, text: 'Text gradient'}
 								]}
 							isClickable={false}>
 				Gradients
 			</NavigationItem>
-			<NavigationItem link="/"
+			<NavigationItem link={`${process.env.PUBLIC_URL}/`}
 							subMenu={[
-									{link: '/flexbox', text: 'Flexbox'},
-									{link: '/columns', text: 'CSS Columns'}
+									{link: `${process.env.PUBLIC_URL}/flexbox`, text: 'Flexbox'},
+									{link: `${process.env.PUBLIC_URL}/columns`, text: 'CSS Columns'}
 								]}
 							isClickable={false}>
 				Layouts
 			</NavigationItem>
-			<NavigationItem link="/"
+			<NavigationItem link={`${process.env.PUBLIC_URL}/`}
 							subMenu={[
-								{link: '/gradient-animator', text: 'Gradient animator'},
-								{link: '/ken-burns', text: 'Ken Burns'}
+								{link: `${process.env.PUBLIC_URL}/gradient-animator`, text: 'Gradient animator'},
+								{link: `${process.env.PUBLIC_URL}/ken-burns`, text: 'Ken Burns'}
 							]}
 							isClickable={false}>
 				Animations
 			</NavigationItem>
-			<NavigationItem link="/transform" isClickable={true}>Transforms</NavigationItem>
+			<NavigationItem link={`${process.env.PUBLIC_URL}/transform`} isClickable={true}>Transforms</NavigationItem>
 			{/*<NavigationItem link="/" isClickable={true}>Transitions</NavigationItem>*/}
 			{/*<NavigationItem link="/" isClickable={true}>Animations</NavigationItem>*/}
 
